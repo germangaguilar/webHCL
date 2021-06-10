@@ -1,0 +1,536 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_head %}
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/theriver_main_styles.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/about.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/about_responsive.css' %} ">
+
+
+{% endblock %}
+
+{% block body_block %}
+<div class="super_container">
+
+
+
+	<!-- Home -->
+
+	<div class="home">
+		<div class="background_image" style="background-image:url( {% static 'images/hall1.jpg' %} )"></div>
+		<div class="home_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content text-center">
+							<div class="home_title">Hotel Ciudad de Logroño ⭑⭑⭑</div>
+							<a href="#promocion">
+							<div class="home_title" style="font-size: 20px;
+								font-weight: 600;
+								color: lightgray;
+								line-height: 1.2;
+								margin-top: 0px ">Conozca las ventajas de reservar en nuestra web</div>
+							</a>
+
+							<div class="booking_form_container">
+								<form action="#" class="booking_form" id="booking_form">
+									<div class="d-flex flex-xl-row flex-column align-items-start justify-content-start">
+										<div class="booking_input_container d-flex flex-row align-items-start justify-content-start flex-wrap">
+											<div><input type="text" class="datepicker booking_input booking_input_a booking_in" placeholder="Entrada / Check in" required="required"></div>
+											<div><input type="text" class="datepicker booking_input booking_input_a booking_out" placeholder="Salida / Check out" required="required"></div>
+											<div><input type="number" class="booking_input booking_input_b" placeholder="Adultos" required="required"></div>
+											<div><input type="number" class="booking_input booking_input_b" placeholder="Niños"></div>
+										</div>
+										<div><button class="booking_button trans_200">Disponibilidad</button></div>
+									</div>
+								</form>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Gallery -->
+
+	<div class="gallery">
+		<div class="gallery_slider_container">
+			<div class="owl-carousel owl-theme gallery_slider">
+
+				<!-- Slide -->
+				<div class="gallery_item">
+					<div class="background_image" style="background-image:url( {% static 'images/workspace.jpg' %} )"></div>
+					<a class="colorbox" href=" {% static 'images/workspace.jpg' %} "></a>
+				</div>
+
+				<!-- Slide -->
+				<div class="gallery_item">
+					<div class="background_image" style="background-image:url( {% static 'images/recepcion.jpg' %} )"></div>
+					<a class="colorbox" href=" {% static 'images/recepcion.jpg' %} "></a>
+				</div>
+
+				<!-- Slide -->
+				<div class="gallery_item">
+					<div class="background_image" style="background-image:url( {% static 'images/desayuno1.jpg' %} )"></div>
+					<a class="colorbox" href=" {% static 'images/desayuno1.jpg' %} "></a>
+				</div>
+
+				<!-- Slide -->
+				<div class="gallery_item">
+					<div class="background_image" style="background-image:url( {% static 'images/entrada1.jpg' %} )"></div>
+					<a class="colorbox" href=" {% static 'images/entrada1.jpg' %} "></a>
+				</div>
+
+				<!-- Slide -->
+				<div class="gallery_item">
+					<div class="background_image" style="background-image:url( {% static 'images/habitacion1.jpg' %} )"></div>
+					<a class="colorbox" href=" {% static 'images/habitacion1.jpg' %} "></a>
+				</div>
+
+				<!-- Slide -->
+				<div class="gallery_item">
+					<div class="background_image" style="background-image:url( {% static 'images/recepcion1.jpg' %} )"></div>
+					<a class="colorbox" href=" {% static 'images/recepcion1.jpg' %} "></a>
+				</div>
+
+				<!-- Slide -->
+				<div class="gallery_item">
+					<div class="background_image" style="background-image:url( {% static 'images/hall1.jpg' %} )"></div>
+					<a class="colorbox" href=" {% static 'images/hall1.jpg' %} "></a>
+				</div>
+
+				<!-- Slide -->
+				<div class="gallery_item">
+					<div class="background_image" style="background-image:url( {% static 'images/entrada2.jpg' %} )"></div>
+					<a class="colorbox" href=" {% static 'images/entrada2.jpg' %} "></a>
+				</div>
+
+				<!-- Slide -->
+				<div class="gallery_item">
+					<div class="background_image" style="background-image:url( {% static 'images/habitacion3.jpg' %} )"></div>
+					<a class="colorbox" href=" {% static 'images/habitacion3.jpg' %} "></a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- About -->
+	<a id="promocion"></a>
+	<div class="about">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-xl-6 order-xl-1 order-1">
+					<div class="about_title"><h1>Las ventajas de reservar con nosotros</h1></div>
+
+
+
+
+				<!-- About Content -->
+
+					<!-- <div class="about_images d-flex flex-row align-items-start justify-content-between flex-wrap">
+						<div class="about_title"><h3>Garantía de precio mínimo</h3></div>
+						<div class="about_title"><h3>Desayuno incluido</h3></div>
+						<div class="about_title"><h3>Cancelación gratuita</h3></div>
+						<div class="about_title"><h3>Sin pagos por adelantado</h3></div>
+					</div>-->
+					<div class="about_content">
+						<div class="about_text">
+							<p>Promoción aplicable a reservas directas, puede escribirnos un correo, reservar por teléfono o reservar en nuestra página.</p>
+						</div>
+						<!--<div class="about_sig"><img src=" {% static 'images/sig.png' %} " alt=""></div>-->
+					</div>
+				</div>
+
+				<!-- About Images
+				<div class="col-lg-6">
+					<div class="about_images d-flex flex-row align-items-start justify-content-between flex-wrap">
+						<img src=" {% static 'images/about_1.png' %} " alt="">
+						<img src=" {% static 'images/about_2.png' %} " alt="">
+						<img src=" {% static 'images/about_3.png' %} " alt="">
+					</div>
+				</div>-->
+
+
+				<div class="col-xl-6 order-xl-2 order-2">
+					<div class="about_content" style="margin-top: 0px; margin-left:10px">
+						<div class="box justify-right" style="margin-top: 15px; margin-left:10px">
+
+							<div class="popover1" align="right"><a class="textbox" tabindex="0" data-toggle="popover" placement="center" ><h3 align="right">Garantía de precio mínimo</h3> </a></div>
+							<!--<div class="icon-home"><img  src=" {% static 'images/icon-price1.svg' %} "> </div>-->
+						</div>
+					<div class="box" style="margin-top: 15px; margin-left:10px" >
+
+						<div class="popover2"><a class="textbox"  tabindex="0" data-toggle="popover" data-container=".well" data-trigger="focus" ><h3> Desayuno buffet incluido</h3> </a></div>
+						<!--<div  class="icon-home"><img  src=" {% static 'images/icon-breakfast1.svg' %} "></div>-->
+					</div>
+					<div class="box" style="margin-top: 15px; margin-left:10px">
+
+						<div class="popover3"><a class="textbox"  tabindex="0" data-toggle="popover"  data-trigger="focus" placement="up"> <h3>Cancelación gratuita</h3> </a></div>
+						<!--<div class="icon-home"><img  src=" {% static 'images/icon-cancelation3.svg' %} "></div>-->
+					</div>
+					<div class="box" style="margin-top: 15px; margin-left:10px">
+
+						<div class="popover4"><a class="textbox"  tabindex="0" data-toggle="popover"  data-trigger="focus" placement="up"> <h3>Sin pagos por adelantado </h3></a></div>
+						<!--<div class="icon-home"><img  src=" {% static 'images/icon-payment1.svg' %} "></div>-->
+					</div>
+					</div>
+				</div>
+
+		</div>
+		<div class="row ">
+			<div><button class="booking_button trans_200 justify-center">Consulte otras promociones</button></div>
+		</div>
+	</div>
+	</div>
+
+	<!-- Features
+
+	<div class="features" style= "padding-top: 40px">
+		<div class="container">
+			<div class="row">
+
+				<!-- Icon Box
+				<div class="col-lg-4 icon_box_col">
+					<div class="icon_box d-flex flex-column align-items-center justify-content-start text-center">
+						<div class="icon_box_icon"><img src=" {% static 'images/icon-descansa2.svg' %} " class="svg" alt="https://img-premium.flaticon.com/png/512/2206/2206554.png?token=exp=1621269511~hmac=a95f7545fc0c65dfff0f79a0044d3bb4"></div>
+						<div class="icon_box_title"><h2>Descanse</h2></div>
+						<div class="icon_box_text">
+							<p>Nuestras amplias habitaciones le ofrecerán las mejores condiciones para su descanso. Un fantástico desayuno buffett le estará esperando al despertar para comenzar el día de un modo inmejorable.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Icon Box
+				<div class="col-lg-4 icon_box_col">
+					<div class="icon_box d-flex flex-column align-items-center justify-content-start text-center">
+						<div class="icon_box_icon"><img src=" {% static 'images/icon-trabaja1.svg' %} " class="svg" alt="https://www.flaticon.com/authors/monkik"></div>
+						<div class="icon_box_title"><h2>Trabaje</h2></div>
+						<div class="icon_box_text">
+							<p>Si necesita trabajar, le invitamos a hacerlo en el salón del hotel y utilizar nuestra red Wi-Fi con total comodidad. El café o té corre por nuestra cuenta.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Icon Box
+				<div class="col-lg-4 icon_box_col">
+					<div class="icon_box d-flex flex-column align-items-center justify-content-start text-center">
+						<div class="icon_box_icon"><img src=" {% static 'images/icon-disfruta1.svg' %} " class="svg" alt="https://www.flaticon.com/authors/monkik"></div>
+						<div class="icon_box_title"><h2>Disfrute</h2></div>
+						<div class="icon_box_text">
+							<p>Nuestra ubicación es perfecta para disfrutar de todo cuanto Logroño tiene que ofrecer. Situado cerca de la principal zona comercial de la ciudad, rodeado de excelentes bares de tapas, ¡y a 700 metros del casco antiguo y la calle Laurel!</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>-->
+
+	<!-- Testimonials -->
+	<div >
+		<a id="testimonials"></a>
+	</div>
+	<div class="testimonials">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src=" {% static 'images/buffett1.jpg' %} " data-speed="0.8"></div>
+		<div class="testimonials_overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="blog_title" style="text-align:center; font-size: 30px;
+					font-weight: 500;
+					color: #abbaaa"><a   href="#">Comentarios de nuestros clientes</a></div>
+					<p></p>
+					<!-- Begin widget code -->
+					<div data-rw-slider="23292"></div>
+					<script>var script = document.createElement("script");script.type = "module";script.src = "https://widgets.thereviewsplace.com/2.0/rw-widget-slider.js";document.getElementsByTagName("head")[0].appendChild(script);</script>
+					<!-- End widget code -->
+
+			</div>
+		</div>
+	</div>
+		</div>
+	<!-- About -->
+
+	<div class="about">
+		<div class="container">
+			<div class="row">
+
+				<!-- About Content -->
+				<div class="col-lg-6">
+					<div class="about_content">
+						<div class="about_title"><h2>En el corazón de Logroño</h2></div>
+						<div class="about_text">
+							<p>La ubicación del hotel ofrece todo tipo de comodidades, permitiéndote desplazarte a pie hasta la estación de tren,
+							de autobús, al casco antiguo, a las mejores zonas comerciales de la ciudad, y por supuesto a la famosa calle del Laurel,
+						ubicada a 700 metros.</p>
+						<p></p>
+						<button type="button" class="btn btn-primary">Consulte nuestro mapa</button>
+						<button type="button" class="btn btn-primary">Google Maps</button>
+
+						<!-- Milestones-->
+						<div class="milestones_container d-flex flex-row align-items-start justify-content-start flex-wrap">
+
+							<!-- Milestone-->
+							<div class="milestone d-flex flex-row align-items-start justify-content-start">
+								<div class="milestone_content">
+									<div class="milestone_counter" data-end-value="700"  data-sign-after="m">0</div>
+									<div class="milestone_title">Calle del Laurel</div>
+								</div>
+							</div>
+
+							<!-- Milestone-->
+							<div class="milestone d-flex flex-row align-items-start justify-content-start">
+								<div class="milestone_content">
+									<div class="milestone_counter" data-end-value="21" data-sign-after="K">0</div>
+									<div class="milestone_title">Tourists this year</div>
+								</div>
+							</div>
+
+							<!-- Milestone-->
+							<div class="milestone d-flex flex-row align-items-start justify-content-start">
+								<div class="milestone_content">
+									<div class="milestone_counter" data-end-value="2">0</div>
+									<div class="milestone_title">Swimming pools</div>
+								</div>
+							</div>
+
+						</div>
+						</div>
+
+					</div>
+
+
+				</div>
+
+				<!-- About Images -->
+				<div class="col-lg-6">
+					<div class="about_images d-flex flex-row align-items-center justify-content-between flex-wrap">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1237.574741092586!2d-2.448873288185603!3d42.4603900335879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5aab4432e4008b%3A0x8e3ef3622e2f786d!2sHotel%20Ciudad%20de%20Logro%C3%B1o!5e0!3m2!1ses!2ses!4v1621264393418!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Split Section Right -->
+
+	<div class="split_section_right container_custom">
+		<div class="container">
+			<div class="row row-xl-eq-height">
+
+				<div class="col-xl-6 order-xl-1 order-2">
+					<div class="split_section_image">
+						<div class="background_image" style="background-image:url( {% static 'images/workspace.jpg' %} )"></div>
+					</div>
+				</div>
+
+				<div class="col-xl-6 order-xl-2 order-1">
+					<div class="split_section_right_content">
+						<div class="split_section_title"><h1 style="font-size: 52px;">Ideal para viajes de trabajo</h1></div>
+						<div class="split_section_text">
+							<p>Nuestras amplias habitaciones y la tranquilidad del parque ubicado frente al hotel le garantizarán
+							un descanso reparador. Si ha venido a trabajar o a concertar una reunión, puede hacer uso de nuestro salón, donde podrá conectar su portátil
+							y utilizar nuestra WiFi, y será invitado a un café.
+						¿Desea un ambiente más distendido? Pruebe nuestra luminosa zona de bar.</p>
+						</div>
+
+						<!-- Loaders -->
+						<div class="loaders_container d-flex flex-row align-items-start justify-content-start flex-wrap">
+
+							<!-- Loader -->
+							<div class="loader_container text-center">
+								<div class="loader text-center" data-perc="0.9">
+									<div class="loader_content">
+										<div class="loader_title">Good Services</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Loader -->
+							<div class="loader_container text-center">
+								<div class="loader text-center" data-perc="0.8">
+									<div class="loader_content">
+										<div class="loader_title">Tourists</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Loader -->
+							<div class="loader_container text-center">
+								<div class="loader text-center" data-perc="1.0">
+									<div class="loader_content">
+										<div class="loader_title">Satisfaction</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Split Section Left -->
+
+	<div class="split_section_left container_custom">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6">
+					<div class="split_section_left_content">
+						<div class="split_section_title"><h1>Una ciudad que te sorprenderá</h1></div>
+						<div class="split_section_text">
+							<p>Espacio en construcción</p>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Loaders Image -->
+				<div class="col-xl-6">
+					<div class="split_section_image split_section_left_image">
+						<div class="background_image" style="background-image:url( {% static 'images/logrono1.jpg' %} )"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_content">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="footer_logo_container text-center">
+							<div class="footer_logo">
+								<a href="#"></a>
+								<div>Ciudad de Logroño</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row footer_row">
+
+					<!-- Address -->
+					<div class="col-lg-3">
+						<div class="footer_title">Our Address</div>
+						<div class="footer_list">
+							<ul>
+								<li>Beach Str. 345</li>
+								<li>67559 Miami</li>
+								<li>USA</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Reservations -->
+					<div class="col-lg-3">
+						<div class="footer_title">Reservations</div>
+						<div class="footer_list">
+							<ul>
+								<li>Tel: 345 5667 889</li>
+								<li>Fax; 6783 4567 889</li>
+								<li>reservations@hotelriver.com</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Newsletter -->
+					<div class="col-lg-3">
+						<div class="footer_title">Newsletter</div>
+						<div class="newsletter_container">
+							<form action="#" class="newsletter_form" id="newsletter_form">
+								<input type="email" class="newsletter_input" placeholder="Your email address" required="required">
+								<button class="newsletter_button">Subscribe</button>
+							</form>
+						</div>
+					</div>
+
+					<!-- Footer images -->
+					<div class="col-lg-3">
+						<div class="certificates d-flex flex-row align-items-start justify-content-lg-between justify-content-start flex-lg-nowrap flex-wrap">
+							<div class="cert"><img src=" {% static 'images/cert_1.png' %} " alt=""></div>
+							<div class="cert"><img src=" {% static 'images/cert_2.png' %} " alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</div>
+	</footer>
+</div>
+
+<script src=" {% static 'js/jquery-3.3.1.min.js' %} "></script>
+<script src=" {% static 'styles/bootstrap-4.1.2/popper.js' %} "></script>
+<script src=" {% static 'styles/bootstrap-4.1.2/bootstrap.min.js' %} "></script>
+<script src=" {% static 'plugins/greensock/TweenMax.min.js' %} "></script>
+<script src=" {% static 'plugins/greensock/TimelineMax.min.js' %} "></script>
+<script src=" {% static 'plugins/scrollmagic/ScrollMagic.min.js' %} "></script>
+<script src=" {% static 'plugins/greensock/animation.gsap.min.js' %} "></script>
+<script src=" {% static 'plugins/greensock/ScrollToPlugin.min.js' %} "></script>
+<script src=" {% static 'plugins/OwlCarousel2-2.3.4/owl.carousel.js' %} "></script>
+<script src=" {% static 'plugins/easing/easing.js' %} "></script>
+<script src=" {% static 'plugins/progressbar/progressbar.min.js' %} "></script>
+<script src=" {% static 'plugins/parallax-js-master/parallax.min.js' %} "></script>
+<script src=" {% static 'plugins/jquery-datepicker/jquery-ui.js' %} "></script>
+<script src=" {% static 'js/about.js' %} "></script>
+
+<script src=" {% static 'plugins/colorbox/jquery.colorbox-min.js' %} "></script>
+<script src=" {% static 'js/custom.js' %} "></script>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover({
+    container: '.well'
+  });
+});
+</script>
+<script>
+	var elem1 = '<div class="textbox"><a href="google.com"><p1>Nuestra web ofrece siempre el precio mínimo para su reserva:</p1></a></div>'+
+    '<div class="textbox"><a href="google.com"><p1>Si encuentra un precio inferior para las mismas fechas, ¡contacte con nosotros y se lo rebajamos un 5%!</p1></a></div>';
+$(document).ready(function(){
+  $('.popover1').popover({content: elem1, trigger:"focus", html: true});
+});
+</script>
+
+<script>
+	var elem2 = '<div class="textbox"><a href="google.com"><p1>La reserva web incluye nuestro desayuno buffet, sin ningún coste adicional.</p1></a></div>';
+$(document).ready(function(){
+  $('.popover2').popover({content: elem2, trigger:"focus", html: true});
+});
+</script>
+
+<script>
+	var elem3 = '<div class="textbox"  ><a href="google.com"><p1>¿Cambio de planes? No hay problema. Si ha reservado por nuestra web, puede cancelar su reserva sin ningún tipo de compromiso.</p1></a></div>';
+$(document).ready(function(){
+  $('.popover3').popover({content: elem3, trigger:"focus", html: true});
+});
+</script>
+
+<script>
+	var elem4 = '<div class="textbox"  ><a href="google.com"><p1>Para mayor comodidad y flexibilidad, no le pediremos ningún pago por adelantado.</p1></a></div>';
+$(document).ready(function(){
+  $('.popover4').popover({content: elem4, trigger:"focus", html: true});
+});
+</script>
+{% endblock %}

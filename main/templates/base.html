@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es-ES">
+<head>
+<title>Hotel Ciudad de Logroño</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Hotel Ciudad de Logroño">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/bootstrap-4.1.2/bootstrap.min.css' %} ">
+<link href=" {% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %} " rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href=" {% static 'plugins/OwlCarousel2-2.3.4/owl.carousel.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'plugins/OwlCarousel2-2.3.4/owl.theme.default.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'plugins/OwlCarousel2-2.3.4/animate.css' %} ">
+<link href=" {% static 'plugins/jquery-datepicker/jquery-ui.css' %} " rel="stylesheet" type="text/css">
+<link href=" {% static 'plugins/colorbox/colorbox.css' %} " rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/main_styles.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/responsive.css' %} ">
+
+{% block extra_head %}{% endblock %}
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header">
+
+		<div class="header_content d-flex flex-row align-items-center justify-content-start">
+
+			<div class="logomobile"><a href="{% url 'inicio' %}">HCL</a></div>
+
+
+			<div class="ml-auto d-flex flex-row align-items-center justify-content-start">
+				{% block extra_header %}			
+				{% endblock %}
+
+
+				<!--
+				{% if user.is_authenticated %}
+				<div class="book_button"><a href=" {% url 'logout' %} ">Cerrar sesión</a></div>
+				{% else %}
+				<div class="book_button"><a href=" {% url 'register' %} ">Login / Registro</a></div>
+				{% endif %}
+
+				<div class="dropdown">
+					<a href="#" data-toggle="dropdown"><img class="phoneicon" src=" {% static 'images/phone.png' %} "  alt="nada"> </a>
+					<ul class="dropdown-menu">
+						<div class="dropdown-item">
+							<a href="tel:+34941250244'"> (+34) 941250244 alt=""></a>
+						</div>
+					</ul>
+				</div>
+
+				<div class="header_phone d-flex flex-row align-items-center justify-content-center"><a href='tel:+34941250244'>
+					<img src=" {% static 'images/phone.png' %} " alt=""></a>
+				</div>
+			-->
+
+
+			<div class="book_button"><a href="{% url 'inicio' %} ">Reserva online</a></div>
+
+
+
+
+		<div class="dropdown">
+				<a href="#" data-toggle="dropdown"><img class="langswitch" src=" {% static 'images/lang-world2.png' %} "  alt="nada"> </a>
+				<ul class="dropdown-menu">
+					<div class="dropdown-item">
+					            <div class="row">
+												<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-english.png' %} " href="google.com" alt=""></a>
+												<a href="inicio/"><img class="langflag" src=" {% static 'images/lang-french.png' %} "  alt=""></a>
+												<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-german.png' %} " href="google.com" alt=""></a>
+												<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-italian.png' %} " href="google.com" alt=""></a>
+												<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-portuguese.png' %} " href="google.com" alt=""></a>
+												<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-spanish.png' %} " href="google.com" alt=""></a>
+					            </div>
+					        </div>
+				</ul>
+		</div>
+
+				<!-- Hamburger Menu -->
+			<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		</div>
+	</div>
+</header>
+
+	<!-- Menu -->
+
+	<div class="menu trans_400 d-flex flex-column align-items-end justify-content-start">
+		<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+		<div class="menu_content">
+			<nav class="menu_nav text-right">
+				<ul>
+					<li><a href=" {% url 'index' %} ">Home</a></li>
+					<li><a href=" {% url 'about' %} ">Sobre nosotros</a></li>
+					<li><a href="#">Rooms</a></li>
+					<li><a href=" {% url 'ofertas' %} ">Blog</a></li>
+					<li><a href=" {% static 'contact.html' %} ">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="row" style="padding-right: 40px; margin-top:15px;">
+			<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-english.png' %} " href="google.com" alt=""></a>
+			<a href="inicio/"><img class="langflag" src=" {% static 'images/lang-french.png' %} "  alt=""></a>
+			<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-german.png' %} " href="google.com" alt=""></a>
+		</div>
+		<div class="row" style="padding-right: 40px; margin-bottom:15px;">
+			<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-italian.png' %} " href="google.com" alt=""></a>
+			<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-portuguese.png' %} " href="google.com" alt=""></a>
+			<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-spanish.png' %} " href="google.com" alt=""></a>
+		</div>
+		<div class="menu_extra">
+			<div class="menu_book text-right"><a href="#">Reserve online</a></div>
+			<div class="menu_phone d-flex flex-row align-items-center justify-content-center">
+				<a href='tel:+34941250244'>
+				<img src=" {% static 'images/phone-2.png' %} " alt="">
+				<span>(+34) 941 250244</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+
+
+{% block body_block %}
+{% endblock %}
+</div>
+
+</html>
