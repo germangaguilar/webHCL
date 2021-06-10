@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-c!0_a4*rj-6hn5vd952n2uugp2$&(@41269l!(+gd+!)e11xcv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['germangaguilar.pythonanywhere.com', 'localhost']
+ALLOWED_HOSTS = ['germangarcia.pythonanywhere.com', 'localhost']
 
 
 # Application definition
@@ -156,4 +156,4 @@ MEDIA_URL='/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_ROOT = "/home/germangaguilar/germangaguilar.pythonanywhere.com/MyProject/static/"
+STATIC_ROOT = "/home/germangarcia/germangarcia.pythonanywhere.com/MyProject/static/"
