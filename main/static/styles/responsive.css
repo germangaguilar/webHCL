@@ -105,6 +105,11 @@
 		margin-right: auto;
 		margin-top: 15px;
 	}
+	.split_section_image
+	{
+		height: 600px;
+		margin-top: 43px;
+	}
 }
 
 /************
@@ -177,7 +182,7 @@
 		margin-bottom: 10px;
 	}
 
-	
+
 	.about_images
 	{
 		margin-top: 42px;
@@ -269,6 +274,10 @@
 	{
 		height: calc(100vw / 2);
 	}
+	.split_section_title h1
+	{
+		font-size: 40px;
+	}
 }
 
 /************
@@ -278,7 +287,14 @@
 @media only screen and (max-width: 575px)
 {
 
-
+	.split_section_title h1
+ 	{
+ 		font-size: 36px;
+ 	}
+	.split_section_image
+	{
+		height: 450px;
+	}
 	h2
 	{
 		font-size: 24px;

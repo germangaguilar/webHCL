@@ -451,29 +451,29 @@ section
 4. Menu
 *********************************/
 
-.menu
+.menumovil
 {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	z-index: 101;
+	z-index: 501;
 	background: rgba(255,255,255,0.93);
 	visibility: hidden;
 	opacity: 0;
 }
-.menu.active
+.menumovil.active
 {
 	visibility: visible;
 	opacity: 1;
 }
-.menu_content
+.menumovil_content
 {
 	padding-right: 30px;
 	padding-top: 170px;
 }
-.menu_close
+.menumovil_close
 {
 	position: absolute;
 	top: 50px;
@@ -481,46 +481,46 @@ section
 	cursor: pointer;
 	z-index: 1;
 }
-.menu_close i
+.menumovil_close i
 {
 	font-size: 24px;
 	color: #121212;
 }
-.menu_close:hover i
+.menumovil_close:hover i
 {
 	color: #ffa37b;
 }
-.menu_nav ul li:not(:last-of-type)
+.menumovil_nav ul li:not(:last-of-type)
 {
 	margin-bottom: 5px;
 }
-.menu_nav ul li a
+.menumovil_nav ul li a
 {
 	font-weight: 700;
 	font-size: 36px;
 	color: #121212;
 	line-height: 1.2;
 }
-.menu_nav ul li a:hover
+.menumovil_nav ul li a:hover
 {
 	color: #ffa37b;
 }
-.menu_nav ul li a span
+.menumovil_nav ul li a span
 {
 	color: #690772;
 }
-.menu_extra
+.menumovil_extra
 {
 	position: absolute;
 	right: 30px;
 	bottom: 30px;
 }
-.menu_book
+.menumovil_book
 {
 	display: none;
 	margin-top: 50px;
 }
-.menu_book a
+.menumovil_book a
 {
 	display: inline-block;
 	position: relative;
@@ -528,7 +528,7 @@ section
 	font-weight: 500;
 	color: rgba(0,0,0,0.5);
 }
-.menu_book a::after
+.menumovil_book a::after
 {
 	display: block;
 	position: absolute;
@@ -544,19 +544,19 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-.menu_book a:hover
+.menumovil_book a:hover
 {
 	color: #ffa37b;
 }
-.menu_book a:hover::after
+.menumovil_book a:hover::after
 {
 	background: #ffa37b;
 }
-.menu_phone
+.menumovil_phone
 {
 	margin-top: 10px;
 }
-.menu_phone span
+.menumovil_phone span
 {
 	font-size: 16px;
 	font-weight: 500;

@@ -10,7 +10,22 @@ from django.contrib.auth import authenticate, login, logout, get_user_model
 
 
 # Create your views here.
-from .forms import LoginForm, RegisterForm
+from .forms import LoginForm, RegisterForm, Pickdates
+
+
+def travelclick(request):
+     return redirect("https://reservations.travelclick.com/114062#/datesofstay")
+
+def pickdates(request):
+    dateform=Pickdates(request.GET or None)
+    if dateform.isvalid():
+        inicio=dateform.cleaned_data.get('Fecha de entrada')
+        salida=dateform.cleaned_data.get('Fecha de salida')
+        adultos=dateform.cleaned_data.get('Adultos')
+        ninos=dateform.cleaned_data.get('Niños')
+
+    #return render(request, "registration.html", {"dateform": dateform})
+    return render(request, "disponibilidad.html", inicio=inicio, salida=salida, adultos=adultos, ninos=ninos)
 
 User = get_user_model()
 
@@ -91,7 +106,11 @@ def logout_view(request):
 
 def index(request):
     ro=models.rooms.objects.all()
-    return render(request,"index0.html",{"ro":ro})
+    return render(request,"index.html",{"ro":ro})
+
+def base(request):
+    ro=models.rooms.objects.all()
+    return render(request,"base.html",{"ro":ro})
 
 def rooms(request):
     ro=models.rooms.objects.all()
@@ -124,8 +143,8 @@ def search(request):
     return render(request,"search.html",{"ro":ro,"val1":val1})
 
 
-def book(request,obj_id):
-    request.session['val700']=obj_id
+def book(request):
+
     return render (request,"booking.html")
 
 def ofertas(request):

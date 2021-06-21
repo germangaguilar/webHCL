@@ -7,16 +7,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Hotel Ciudad de Logroño">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href=" {% static 'styles/bootstrap-4.1.2/bootstrap.min.css' %} ">
-<link href=" {% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %} " rel="stylesheet" type="text/css">
+
+
 <link rel="stylesheet" type="text/css" href=" {% static 'plugins/OwlCarousel2-2.3.4/owl.carousel.css' %} ">
 <link rel="stylesheet" type="text/css" href=" {% static 'plugins/OwlCarousel2-2.3.4/owl.theme.default.css' %} ">
 <link rel="stylesheet" type="text/css" href=" {% static 'plugins/OwlCarousel2-2.3.4/animate.css' %} ">
 <link href=" {% static 'plugins/jquery-datepicker/jquery-ui.css' %} " rel="stylesheet" type="text/css">
 <link href=" {% static 'plugins/colorbox/colorbox.css' %} " rel="stylesheet" type="text/css">
-
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/bootstrap-4.1.2/bootstrap.min.css' %} ">
 <link rel="stylesheet" type="text/css" href=" {% static 'styles/main_styles.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/about.css' %} ">
 <link rel="stylesheet" type="text/css" href=" {% static 'styles/responsive.css' %} ">
+<link href=" {% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %} " rel="stylesheet" type="text/css">
 
 {% block extra_head %}{% endblock %}
 </head>
@@ -60,7 +62,7 @@
 			-->
 
 
-			<div class="book_button"><a href="{% url 'inicio' %} ">Reserva online</a></div>
+			<div class="book_button"><a href="{% url 'travelclick' %} ">Reserva online</a></div>
 
 
 
@@ -92,16 +94,16 @@
 	<div class="menu trans_400 d-flex flex-column align-items-end justify-content-start">
 		<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
 		<div class="menu_content">
-			<nav class="menu_nav text-right">
-				<ul>
-					<li><a href=" {% url 'inicio' %} ">Inicio</a></li>
-					<li><a href=" {% url 'rooms' %} ">Nuestras habitaciones</a></li>
-					<li><a href="" {% url 'instalaciones' %} "">Instalaciones</a></li>
-					<li><a href=" # ">Blog</a></li>
-					<li><a href=" #">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
+	<nav class="menu_nav text-right">
+		<ul>
+			<li><a href=" # ">Home</a></li>
+			<li><a href=" {% url 'about' %} ">Sobre nosotros</a></li>
+			<li><a href="#">Rooms</a></li>
+			<li><a href=" {% url 'ofertas' %} ">Blog</a></li>
+			<li><a href=" {% static 'contact.html' %} ">Contact</a></li>
+		</ul>
+	</nav>
+</div>
 
 		<div class="row" style="padding-right: 40px; margin-top:15px;">
 			<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-english.png' %} " href="google.com" alt=""></a>
@@ -123,12 +125,15 @@
 		</div>
 	</div>
 </div>
+{% block body_block %}
+{% endblock %}
+
+<script src=" {% static 'js/about.js' %} "></script>
 </body>
 
 
 
-{% block body_block %}
-{% endblock %}
-</div>
+
+
 
 </html>

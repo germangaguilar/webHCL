@@ -4,7 +4,7 @@
 {% block extra_head %}
 <link rel="stylesheet" type="text/css" href=" {% static 'styles/theriver_main_styles.css' %} ">
 <link rel="stylesheet" type="text/css" href=" {% static 'styles/about.css' %} ">
-<link rel="stylesheet" type="text/css" href=" {% static 'styles/about_responsive.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/responsive.css' %} ">
 
 
 {% endblock %}
@@ -46,15 +46,21 @@
 							</a>
 
 							<div class="booking_form_container">
-								<form action="#" class="booking_form" id="booking_form">
+								<form action="/disponibilidad-y-precios/" class="booking_form" id="booking_form" method="get">
+
+									<label for="pick_date"> </label>
 									<div class="d-flex flex-xl-row flex-column align-items-start justify-content-start">
 										<div class="booking_input_container d-flex flex-row align-items-start justify-content-start flex-wrap">
-											<div><input type="text" class="datepicker booking_input booking_input_a booking_in" placeholder="Entrada / Check in" required="required"></div>
-											<div><input type="text" class="datepicker booking_input booking_input_a booking_out" placeholder="Salida / Check out" required="required"></div>
-											<div><input type="number" class="booking_input booking_input_b" placeholder="Adultos" required="required"></div>
-											<div><input type="number" class="booking_input booking_input_b" placeholder="Niños"></div>
+											<div><input type="text" class="datepicker booking_input booking_input_a booking_in" placeholder="Entrada / Check in" required="required"
+												value="{{ fecha_entrada }}" name="fecha_entrada"></div>
+											<div><input type="text" class="datepicker booking_input booking_input_a booking_out" placeholder="Salida / Check out" required="required"
+												value="{{ fecha_salida }}" name="fecha_salida"></div>
+											<div><input type="number" class="booking_input booking_input_b" placeholder="Adultos" required="required"
+												value="{{ num_adultos }}" name="num_adultos"></div>
+											<div><input type="number" class="booking_input booking_input_b" placeholder="Niños"
+												value="{{ num_ninos }}" name="num_ninos"></div>
 										</div>
-										<div><button class="booking_button trans_200">Disponibilidad</button></div>
+										<div><button class="booking_button trans_200"><a href="{% url 'travelclick' %} ">Disponibilidad</button></div>
 									</div>
 								</form>
 							</div>
@@ -66,7 +72,7 @@
 			</div>
 		</div>
 	</div>
-
+</div>
 	<!-- Gallery -->
 
 	<div class="gallery">
@@ -132,8 +138,9 @@
 	</div>
 
 	<!-- About -->
-	<a id="promocion"></a>
+
 	<div class="about">
+			<a id="promocion"></a>
 		<div class="container">
 			<div class="row">
 
@@ -195,9 +202,7 @@
 				</div>
 
 		</div>
-		<div class="row ">
-			<div><button class="booking_button trans_200 justify-center">Consulte otras promociones</button></div>
-		</div>
+
 	</div>
 	</div>
 
@@ -256,7 +261,7 @@
 				<div class="col">
 					<div class="blog_title" style="text-align:center; font-size: 30px;
 					font-weight: 500;
-					color: #abbaaa"><a   href="#">Comentarios de nuestros clientes</a></div>
+					color: #abbaaa"><a   href="">Comentarios de nuestros clientes</a></div>
 					<p></p>
 					<!-- Begin widget code -->
 					<div data-rw-slider="23292"></div>
@@ -392,7 +397,7 @@
 
 			</div>
 		</div>
-	</div>
+
 
 	<!-- Split Section Left -->
 
@@ -486,11 +491,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </div>
 	</footer>
-</div>
+
 
 <script src=" {% static 'js/jquery-3.3.1.min.js' %} "></script>
 <script src=" {% static 'styles/bootstrap-4.1.2/popper.js' %} "></script>
-<script src=" {% static 'styles/bootstrap-4.1.2/bootstrap.min.js' %} "></script>
+
 <script src=" {% static 'plugins/greensock/TweenMax.min.js' %} "></script>
 <script src=" {% static 'plugins/greensock/TimelineMax.min.js' %} "></script>
 <script src=" {% static 'plugins/scrollmagic/ScrollMagic.min.js' %} "></script>
@@ -501,10 +506,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src=" {% static 'plugins/progressbar/progressbar.min.js' %} "></script>
 <script src=" {% static 'plugins/parallax-js-master/parallax.min.js' %} "></script>
 <script src=" {% static 'plugins/jquery-datepicker/jquery-ui.js' %} "></script>
-<script src=" {% static 'js/about.js' %} "></script>
 
+<script src=" {% static 'styles/bootstrap-4.1.2/bootstrap.min.js' %} "></script>
 <script src=" {% static 'plugins/colorbox/jquery.colorbox-min.js' %} "></script>
-<script src=" {% static 'js/custom.js' %} "></script>
+
+
+
 
 <script>
 $(document).ready(function(){
@@ -513,6 +520,9 @@ $(document).ready(function(){
   });
 });
 </script>
+
+
+
 <script>
 	var elem1 = '<div class="textbox"><a href="google.com"><p1>Nuestra web ofrece siempre el precio mínimo para su reserva:</p1></a></div>'+
     '<div class="textbox"><a href="google.com"><p1>Si encuentra un precio inferior para las mismas fechas, ¡contacte con nosotros y se lo rebajamos un 5%!</p1></a></div>';

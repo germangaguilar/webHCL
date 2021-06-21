@@ -6,6 +6,18 @@ non_allowed_usernames = ['abc']
 
 User = get_user_model()
 
+class Pickdates(forms.Form):
+    fecha_entrada = forms.DateField(label='Fecha de entrada')
+    fecha_salida = forms.DateField(label='Fecha de salida')
+    num_adultos = forms.IntegerField(label='Adultos')
+    num_ninos = forms.IntegerField(label='Niños')
+
+    def cleaninfo(self):
+        fecha_entrada=self.cleaned_data.get('Fecha de entrada')
+        fecha_salida=self.cleaned_data.get('Fecha de salida')
+        num_adultos=self.cleaned_data.get('Adultos')
+        num_ninos=self.cleaned_data.get('Niños')
+
 class RegisterForm(forms.Form):
     nombre = forms.CharField(label='Nombre')
     apellidos = forms.CharField(label='Apellidos')

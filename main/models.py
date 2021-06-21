@@ -4,7 +4,13 @@ from django.contrib.auth.models import User
 
 
 # Create your models here.
-
+"""
+class fecha(models.Model):
+    initial_date = models.DateField(required=True)
+    exit_date = models.DateField(required=True)
+    adults = models.IntegerField(maximum=10)
+    kids = models.IntegerField(null=True)
+"""
 #usuarios
 #extraído de curso django
 class UserProfileInfo(models.Model):
