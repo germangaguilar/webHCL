@@ -13,6 +13,7 @@ from django.contrib.auth import authenticate, login, logout, get_user_model
 from .forms import LoginForm, RegisterForm, Pickdates
 
 
+
 def travelclick(request):
      return redirect("https://reservations.travelclick.com/114062#/datesofstay")
 
@@ -104,6 +105,7 @@ def logout_view(request):
     # request.user == Anon User
     return redirect("/register")
 
+
 def index(request):
     ro=models.rooms.objects.all()
     return render(request,"index.html",{"ro":ro})
@@ -124,7 +126,7 @@ def contact(request):
     ro=models.rooms.objects.all()
     return render(request,"about2.html",{"ro":ro})
 
-def instalaciones(request):
+def servicios(request):
     ro=models.rooms.objects.all()
     return render(request,"spaces.html",{"ro":ro})
 

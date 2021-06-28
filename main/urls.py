@@ -11,7 +11,7 @@ urlpatterns = [
      path("quienes_somos",views.about,name='about'),
      path("contacto",views.contact,name='contact'),
      path("ofertas",views.ofertas,name='ofertas'),
-     path("instalaciones",views.instalaciones,name='instalaciones'),
+     path("servicios",views.servicios,name='servicios'),
      path("book/<obj_id>",views.book,name='book'),
      path("confirm",views.confirm,name='confirm'),
      path("payment",views.payment,name='payment'),
@@ -20,5 +20,5 @@ urlpatterns = [
      path("registro",views.register_view,name='registro'),
      path("habitaciones",views.rooms,name='rooms'),
      path("prueba",views.book,name='prueba'),
-     path("disponibilidad-y-precios",views.travelclick,name='travelclick'),
+     path("https://reservations.travelclick.com/114062#/datesofstay",views.travelclick,name='travelclick'),
 ]

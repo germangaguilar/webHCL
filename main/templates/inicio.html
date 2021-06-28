@@ -5,8 +5,6 @@
 <link rel="stylesheet" type="text/css" href=" {% static 'styles/theriver_main_styles.css' %} ">
 <link rel="stylesheet" type="text/css" href=" {% static 'styles/about.css' %} ">
 <link rel="stylesheet" type="text/css" href=" {% static 'styles/responsive.css' %} ">
-
-
 {% endblock %}
 
 {% block extra_header %}
@@ -14,7 +12,7 @@
 	<ul class="d-flex flex-row align-items-start justify-content-start">
 		<li class="active"><a href="{% url 'inicio' %}">Inicio</a></li>
 		<li><a href=" {% url 'rooms' %} ">Habitaciones</a></li>
-		<li><a href="{% url 'instalaciones' %}">Instalaciones</a></li>
+		<li><a href="{% url 'servicios' %}">Servicios</a></li>
 		<li><a href="#">Ubicación</a></li>
     <li><a href="#">Ofertas</a></li>
 		<li><a href="tel:+34941250244'"><img src=" {% static 'images/phone.png' %} " alt=""> (+34) 941250244 </a></li>
@@ -60,7 +58,7 @@
 											<div><input type="number" class="booking_input booking_input_b" placeholder="Niños"
 												value="{{ num_ninos }}" name="num_ninos"></div>
 										</div>
-										<div><button class="booking_button trans_200"><a href="{% url 'travelclick' %} ">Disponibilidad</button></div>
+										<div><button class="booking_button trans_200"><a href="https://reservations.travelclick.com/114062#/guestsandrooms ">Disponibilidad</button></div>
 									</div>
 								</form>
 							</div>
@@ -74,7 +72,6 @@
 	</div>
 </div>
 	<!-- Gallery -->
-
 	<div class="gallery">
 		<div class="gallery_slider_container">
 			<div class="owl-carousel owl-theme gallery_slider">
@@ -492,7 +489,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </div>
 	</footer>
 
-
+<!--
 <script src=" {% static 'js/jquery-3.3.1.min.js' %} "></script>
 <script src=" {% static 'styles/bootstrap-4.1.2/popper.js' %} "></script>
 
@@ -508,8 +505,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src=" {% static 'plugins/jquery-datepicker/jquery-ui.js' %} "></script>
 
 <script src=" {% static 'styles/bootstrap-4.1.2/bootstrap.min.js' %} "></script>
-<script src=" {% static 'plugins/colorbox/jquery.colorbox-min.js' %} "></script>
+<script src=" {% static 'plugins/colorbox/jquery.colorbox-min.js' %} "></script>-->
 
+<style>.popover { height:50px !important; width: 600px; }</style>
+<script src=" {% static 'js/jquery-3.3.1.min.js' %} "></script>
+<script src=" {% static 'styles/bootstrap-4.1.2/popper.js' %} "></script>
+<script src=" {% static 'styles/bootstrap-4.1.2/bootstrap.min.js' %} "></script>
+<script src=" {% static 'plugins/greensock/TweenMax.min.js' %} "></script>
+<script src=" {% static 'plugins/greensock/TimelineMax.min.js' %} "></script>
+<script src=" {% static 'plugins/scrollmagic/ScrollMagic.min.js' %} "></script>
+<script src=" {% static 'plugins/greensock/animation.gsap.min.js' %} "></script>
+<script src=" {% static 'plugins/greensock/ScrollToPlugin.min.js' %} "></script>
+<script src=" {% static 'plugins/OwlCarousel2-2.3.4/owl.carousel.js' %} "></script>
+<script src=" {% static 'plugins/easing/easing.js' %} "></script>
+<script src=" {% static 'plugins/progressbar/progressbar.min.js' %} "></script>
+<script src=" {% static 'plugins/parallax-js-master/parallax.min.js' %} "></script>
+<script src=" {% static 'plugins/jquery-datepicker/jquery-ui.js' %} "></script>
+<script src=" {% static 'plugins/colorbox/jquery.colorbox-min.js' %} "></script>
+<script src=" {% static 'js/custom.js' %} "></script>
+<script src=" {% static 'js/about.js' %} "></script>
 
 
 

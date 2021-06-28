@@ -2,6 +2,9 @@
 {% load static %}
 
 {% block extra_head %}
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/theriver_main_styles.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/about.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/responsive.css' %} ">
 <link rel="stylesheet" href="{% static 'styles/europestyle.css' %}" type="text/css">
 <link rel="stylesheet" href="{% static 'styles/sona-style.css' %}" type="text/css">
 <link rel="stylesheet" href="{% static 'styles/flaticon.css' %}" type="text/css">
@@ -12,7 +15,7 @@
   <ul class="d-flex flex-row align-items-start justify-content-start">
     <li><a href="{% url 'inicio' %}">Inicio</a></li>
     <li><a href=" {% url 'rooms' %} ">Habitaciones</a></li>
-    <li class="active"><a href="{% url 'instalaciones' %}">Instalaciones</a></li>
+    <li class="active"><a href="{% url 'servicios' %}">Servicios</a></li>
     <li><a href="#">Ubicación</a></li>
     <li><a href="#">Ofertas</a></li>
     <li><a href="tel:+34941250244'"><img src=" {% static 'images/phone.png' %} " alt=""> (+34) 941250244 </a></li>
