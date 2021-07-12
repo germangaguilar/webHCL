@@ -21,7 +21,7 @@ $(document).ready(function()
 {
 	"use strict";
 
-	/* 
+	/*
 
 	1. Vars and Inits
 
@@ -55,7 +55,7 @@ $(document).ready(function()
 	initMilestones();
 	initSvg();
 
-	/* 
+	/*
 
 	2. Set Header
 
@@ -73,7 +73,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	3. Init Menu
 
@@ -99,7 +99,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	4. Init Date Picker
 
@@ -119,14 +119,14 @@ $(document).ready(function()
 				// var dateD = date.getDate();
 				// var dateY = date.getFullYear();
 				// var dateFinal = dateM + '/' + dateD + '/' + dateY;
-				var placeholder = dp.data('placeholder');
+			  var placeholder = dp.data('placeholder');
 				dp.val(placeholder);
 				dp.datepicker();
 			});
-		}	
+		}
 	}
 
-	/* 
+	/*
 
 	5. Init Accordions
 
@@ -146,7 +146,7 @@ $(document).ready(function()
 				{
 					var panel = $(acc.next());
 					var panelH = panel.prop('scrollHeight') + "px";
-					
+
 					if(panel.css('max-height') == "0px")
 					{
 						panel.css('max-height', panel.prop('scrollHeight') + "px");
@@ -154,7 +154,7 @@ $(document).ready(function()
 					else
 					{
 						panel.css('max-height', "0px");
-					} 
+					}
 				}
 
 				acc.on('click', function()
@@ -164,7 +164,7 @@ $(document).ready(function()
 						acc.removeClass('active');
 						var panel = $(acc.next());
 						var panelH = panel.prop('scrollHeight') + "px";
-						
+
 						if(panel.css('max-height') == "0px")
 						{
 							panel.css('max-height', panel.prop('scrollHeight') + "px");
@@ -172,14 +172,14 @@ $(document).ready(function()
 						else
 						{
 							panel.css('max-height', "0px");
-						} 
+						}
 					}
 					else
 					{
 						acc.addClass('active');
 						var panel = $(acc.next());
 						var panelH = panel.prop('scrollHeight') + "px";
-						
+
 						if(panel.css('max-height') == "0px")
 						{
 							panel.css('max-height', panel.prop('scrollHeight') + "px");
@@ -187,14 +187,14 @@ $(document).ready(function()
 						else
 						{
 							panel.css('max-height', "0px");
-						} 
+						}
 					}
 				});
 			});
 		}
 	}
 
-	/* 
+	/*
 
 	6. Init Tabs
 
@@ -217,7 +217,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	7. Init Loaders
 
@@ -284,7 +284,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	8. Init Milestones
 
@@ -328,8 +328,8 @@ $(document).ready(function()
 		    		var counterTween = TweenMax.to(counter, 4,
 		    		{
 		    			value: endValue,
-		    			roundProps:"value", 
-						ease: Circ.easeOut, 
+		    			roundProps:"value",
+						ease: Circ.easeOut,
 						onUpdate:function()
 						{
 							document.getElementsByClassName('milestone_counter')[i].innerHTML = signBefore + counter.value + signAfter;
@@ -341,7 +341,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	9. Init SVG
 
@@ -379,7 +379,7 @@ $(document).ready(function()
 					$img.replaceWith($svg);
 				}, 'xml');
 			});
-		}	
+		}
 	}
 
 });

@@ -1,22 +1,21 @@
 from django import forms
 from django.contrib.auth import get_user_model
 
+
+# Create your forms here.
+
+class ContactForm(forms.Form):
+	first_name = forms.CharField(max_length = 50)
+	last_name = forms.CharField(max_length = 50)
+	email_address = forms.EmailField(max_length = 150)
+	message = forms.CharField(widget = forms.Textarea, max_length = 3000)
+
+
 non_allowed_usernames = ['abc']
 # check for unique email & username
 
 User = get_user_model()
 
-class Pickdates(forms.Form):
-    fecha_entrada = forms.DateField(label='Fecha de entrada')
-    fecha_salida = forms.DateField(label='Fecha de salida')
-    num_adultos = forms.IntegerField(label='Adultos')
-    num_ninos = forms.IntegerField(label='Niños')
-
-    def cleaninfo(self):
-        fecha_entrada=self.cleaned_data.get('Fecha de entrada')
-        fecha_salida=self.cleaned_data.get('Fecha de salida')
-        num_adultos=self.cleaned_data.get('Adultos')
-        num_ninos=self.cleaned_data.get('Niños')
 
 class RegisterForm(forms.Form):
     nombre = forms.CharField(label='Nombre')

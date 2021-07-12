@@ -67,18 +67,7 @@
 
 @media only screen and (max-width: 1199px)
 {
-	.popover
-	{
-	 background: none;
-	 opacity:1;
-	 min-width: 400px;
-	 height: 200px;
-	 border: none;
-	 margin-left: 50%;
-	 margin-top: 10%;
-	 padding-bottom: 20%;
-	 padding-top: 0%;
-	}
+
 
 	.header_phone
 	{
@@ -104,6 +93,16 @@
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 15px;
+	}
+
+	.booking_button_container1
+	{
+		display:none;
+	}
+
+	.booking_button_container2
+	{
+		display:block;
 	}
 	.split_section_image
 	{
@@ -137,15 +136,32 @@
 @media only screen and (max-width: 991px)
 {
 	.popover {
-	 background: #171717;
-	 opacity:0.98;
-	 width: 100%;
-	 max-height: 200px;
-	 border: none;
-	 margin-left: 5%;
-	 margin-top: 0%;
-	 padding-bottom: 0%;
-	 padding-top: 0%;
+	 margin-left: 0%;
+	 max-width: 80%;
+	 max-height: 100%;
+
+	}
+
+
+
+	.home_title
+	{
+		font-size: 40px;
+	}
+
+	.home_title2
+	{
+		font-size: 18px;
+	}
+	.booking_form_container
+	{
+		margin-top:0px;
+	}
+
+
+	.booking_button
+	{
+		margin-top:5px;
 	}
 
 
@@ -244,12 +260,18 @@
 @media only screen and (max-width: 767px)
 {
 
+	.popover {
+	 margin-left: 0%;
+	 max-width: 80%;
+	 max-height: 60%;
 
+	}
 
 	.header_content
 	{
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+		height: 90px;
 	}
 
 	.home_slider_dots_container
@@ -274,6 +296,63 @@
 	{
 		height: calc(100vw / 2);
 	}
+
+	.milestone_counter
+	{
+		font-size: 56px;
+	}
+	.loader_container
+	{
+		height: 120px;
+	}
+	.loader
+	{
+		width: 120px;
+		height: 120px;
+	}
+	.progressbar-text
+	{
+		font-size: 36px !important;
+	}
+	.loader_content
+	{
+		bottom: 3px;
+	}
+	.loader_title
+	{
+		font-size: 13px;
+	}
+
+
+	.icontrip
+	{
+		display: block;
+		width: 25px;
+		height: 25px;
+		margin-left: 22px;
+		margin-bottom: 2px;
+		margin-top: 0px;
+	}
+
+	.icongoogle
+	{
+		display: block;
+		height: 25px;
+		margin-left: 15px;
+		margin-bottom: 2px;
+		margin-top: 0px;
+	}
+
+	.iconexpedia
+	{
+		display: block;
+
+		height: 23px;
+		margin-left: 18px;
+		margin-bottom: 2px;
+		margin-top: 0px;
+	}
+
 	.split_section_title h1
 	{
 		font-size: 40px;
@@ -286,7 +365,16 @@
 
 @media only screen and (max-width: 575px)
 {
+	.popover {
+	 margin-left: 0%;
+	 max-width: 80%;
+	 max-height: 400%;
 
+	}
+
+	.book_button2{
+		display: none;
+	}
 	.split_section_title h1
  	{
  		font-size: 36px;
@@ -322,10 +410,7 @@
 		font-size: 18px;
 		line-height: 32px;
 	}
-	.home_title
-	{
-		font-size: 40px;
-	}
+
 	.booking_input
 	{
 		height: 40px;
@@ -382,6 +467,60 @@
 
 @media only screen and (max-width: 480px)
 {
+	.loader_container
+	{
+		height: 90px;
+	}
+	.loader
+	{
+		width: 90px;
+		height: 90px;
+	}
+	.progressbar-text
+	{
+		font-size: 28px !important;
+	}
+
+	.loader_title
+	{
+		font-size: 13px;
+	}
+
+	.loader_content
+	{
+		bottom: 3px;
+	}
+
+
+
+	.icontrip
+	{
+		display: block;
+		width: 18px;
+		height: 18px;
+		margin-left: 22px;
+		margin-bottom: 2px;
+		margin-top: 0px;
+	}
+
+	.icongoogle
+	{
+		display: block;
+		height: 18px;
+		margin-left: 15px;
+		margin-bottom: 2px;
+		margin-top: 0px;
+	}
+
+	.iconexpedia
+	{
+		display: block;
+
+		height: 17px;
+		margin-left: 18px;
+		margin-bottom: 2px;
+		margin-top: 0px;
+	}
 
 }
 
@@ -391,12 +530,7 @@
 
 @media only screen and (max-width: 479px)
 {
-	.booking_button
-	{
-		width: 360px;
-		height: 54px;
-		background: #ffa37b;
-	}
+
 
 }
 
@@ -404,11 +538,24 @@
 14. 400px
 ************/
 
-@media only screen and (max-width: 400px)
+@media only screen and (max-width: 440px)
 {
-	.booking_button
+	.loader_container
 	{
-		width: 320px;
-		height: 54px;
+		height: 90px;
 	}
+	.loader
+	{
+		width: 90px;
+		height: 90px;
+	}
+	.progressbar-text
+	{
+		font-size: 30px !important;
+	}
+	.loader_title
+	{
+		font-size: 13px;
+	}
+
 }

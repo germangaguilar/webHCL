@@ -3,30 +3,40 @@ from . import models
 from django.http import Http404
 from django.http import HttpResponse
 import pdb
-from django.core.mail import send_mail
+from django.core.mail import send_mail, BadHeaderError
+
 # Create your views here.
 
 from django.contrib.auth import authenticate, login, logout, get_user_model
 
 
 # Create your views here.
-from .forms import LoginForm, RegisterForm, Pickdates
+from .forms import LoginForm, RegisterForm, ContactForm
 
 
 
-def travelclick(request):
-     return redirect("https://reservations.travelclick.com/114062#/datesofstay")
 
-def pickdates(request):
-    dateform=Pickdates(request.GET or None)
-    if dateform.isvalid():
-        inicio=dateform.cleaned_data.get('Fecha de entrada')
-        salida=dateform.cleaned_data.get('Fecha de salida')
-        adultos=dateform.cleaned_data.get('Adultos')
-        ninos=dateform.cleaned_data.get('Niños')
+def contact(request):
+	if request.method == 'POST':
+		form = ContactForm(request.POST)
+		if form.is_valid():
+			subject = "Website Inquiry"
+			body = {
+			'first_name': form.cleaned_data['first_name'],
+			'last_name': form.cleaned_data['last_name'],
+			'email': form.cleaned_data['email_address'],
+			'message':form.cleaned_data['message'],
+			}
+			message = "\n".join(body.values())
 
-    #return render(request, "registration.html", {"dateform": dateform})
-    return render(request, "disponibilidad.html", inicio=inicio, salida=salida, adultos=adultos, ninos=ninos)
+			try:
+				send_mail(subject, message, 'admin@example.com', ['admin@example.com'])
+			except BadHeaderError:
+				return HttpResponse('Invalid header found.')
+			return redirect ("main:inicio")
+
+	form = ContactForm()
+	return render(request, "inicio.html", {'form':form})
 
 User = get_user_model()
 
@@ -119,8 +129,26 @@ def rooms(request):
     return render(request,"rooms2.html",{"ro":ro})
 
 def inicio(request):
-    ro=models.rooms.objects.all()
-    return render(request,"inicio.html",{"ro":ro})
+	if request.method == 'POST':
+		form = ContactForm(request.POST)
+		if form.is_valid():
+			subject = "Website Inquiry"
+			body = {
+			'first_name': form.cleaned_data['first_name'],
+			'last_name': form.cleaned_data['last_name'],
+			'email': form.cleaned_data['email_address'],
+			'message':form.cleaned_data['message'],
+			}
+			message = "\n".join(body.values())
+
+			try:
+				send_mail(subject, message, 'germangarciaaguilar@gmail.com', ['germangarciaaguilar@gmail.com'])
+			except BadHeaderError:
+				return HttpResponse('Invalid header found.')
+			return redirect ("main:inicio")
+
+	form = ContactForm()
+	return render(request, "inicio.html", {'form':form})
 
 def contact(request):
     ro=models.rooms.objects.all()
@@ -138,78 +166,10 @@ def base(request):
     ro=models.rooms.objects.all()
     return render(request,"base.html",{"ro":ro})
 
-def search(request):
-    ro=models.rooms.objects.all()
-    val1=request.POST['num1']
-
-    return render(request,"search.html",{"ro":ro,"val1":val1})
 
 
-def book(request):
 
-    return render (request,"booking.html")
+
 
 def ofertas(request):
-    ro=models.rooms.objects.all()
-    return render (request,"ofertas.html",{"ro":ro})
-
-
-
-
-def confirm(request):
-
-     val8=int(request.POST['adult'])
-     val10=int(request.POST['child'])
-     val11=int(request.POST['nights'])
-
-     cost=(val11*((val8*1000)+(val10*500)))
-     request.session['val12']=request.POST['name']
-     request.session['val2']=request.POST['adult']
-     request.session['val3']=request.POST['child']
-     request.session['val13']=request.POST['no']
-     request.session['val9']=request.POST['room_code']
-     request.session['val6']=request.POST['nights']
-     request.session['val30']=request.POST['checkin']
-     request.session['var']=cost
-     request.session['val150']=request.POST['email']
-     return render(request,"confirm.html",{'cost':cost})
-
-
-
-
-
-
-def payment(request):
-    if 'val700' not in request.session:
-        return redirect('/')
-    cost=request.session['val700']
-    return render(request,"Payment.html",{'cost':cost})
-
-
-def success(request):
-
-
-    guest1=models.guest()
-    guest1.Head_name=request.session['val12']
-    guest1.No_of_adults=request.session['val2']
-    guest1.no_of_children=request.session['val3']
-    guest1.Identity_no=request.session['val13']
-    guest1.Room_code=request.session['val700']
-    guest1.No_of_nights=request.session['val6']
-
-
-    guest1.save()
-
-    ro=models.rooms.objects.all()
-    for ro in ro :
-            if (ro.Roomcode==request.session['val700']):
-                    ro.Availible=False
-                    ro.save()
-                    break
-    val180=request.session['val150']
-    # send_mail('Payment Received','Room Booked','workjash@hushmail.com',['{}'.format(val180)],fail_silently=True)
-    return render (request,"success.html")
-
-def cancel(request):
-    del request.session['val700']
-    return redirect('/')
+    return render (request,"ofertas.html")

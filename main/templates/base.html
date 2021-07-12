@@ -36,8 +36,45 @@
 
 
 			<div class="ml-auto d-flex flex-row align-items-center justify-content-start">
-				{% block extra_header %}
-				{% endblock %}
+
+				<nav class="main_nav">
+					<ul class="d-flex flex-row align-items-start justify-content-start">
+						{% block extra_header %}
+						{% endblock %}
+
+
+					 <li style="	font-size: 16px;
+						 font-weight: 500;
+						 color: #ffffff;"><a  data-toggle="dropdown"><img src=" {% static 'images/phone.png' %} " alt="">  Contacto  </a>
+						<ul class="dropdown-menu">
+							<div class="dropdown-item">
+													<div class="row" >
+														<a href="tel:+34941250244"  alt=""><p style="	font-size: 16px;
+															font-weight: 500;
+															color: #ffffff;">+34 941 250244</p></a>
+														<!--
+														<a href=""> <img class="langflag" src=" {% static 'images/lang-german.png' %} " href="google.com" alt=""></a>
+														<a href=""> <img class="langflag" src=" {% static 'images/lang-italian.png' %} " href="google.com" alt=""></a>
+														<a href=""> <img class="langflag" src=" {% static 'images/lang-portuguese.png' %} " href="google.com" alt=""></a>
+														<a href=""> <img class="langflag" src=" {% static 'images/lang-spanish.png' %} " href="google.com" alt=""></a>
+													-->
+													</div>
+
+													<div class="row">
+														<a href="mailto: ciudad@pretur.com"alt=""><p style="	font-size: 16px;
+															font-weight: 500;
+															color: #ffffff;">ciudad@pretur.com</p></a>
+
+													</div>
+											</div>
+						</ul>
+						</li>
+						</ul>
+
+				</nav>
+
+
+
 
 
 				<!--
@@ -61,24 +98,26 @@
 				</div>
 			-->
 
-
-			<div class="book_button"><a href="https://reservations.travelclick.com/114062#/guestsandrooms">Reserva online</a></div>
-
-
+			<div class="book_button2" style="width: 120px;"><a href="{% url 'ofertas' %}">Ofertas</a></div>
+			<div class="book_button" style="margin-left: 10px;"><a href="https://reservations.travelclick.com/114062?HotelID=114062&LanguageID=2#/guestsandrooms">Reserva online</a></div>
 
 
-		<div class="dropdown">
-				<a href="#" data-toggle="dropdown"><img class="langswitch" src=" {% static 'images/lang-world2.png' %} "  alt="nada"> </a>
+
+
+		<div class="dropdown" style= "margin-left: 6px">
+				<a href="#" data-toggle="dropdown"><img class="langflag" src=" {% static 'images/lang-spanish.png' %} "  alt="nada"> </a>
 				<ul class="dropdown-menu">
 					<div class="dropdown-item">
 					            <div class="row">
-												<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-english.png' %} " href="google.com" alt=""></a>
+												<a href=""> <img class="langflag" src=" {% static 'images/lang-english.png' %} " href="google.com" alt=""></a>
 												<a href="inicio/"><img class="langflag" src=" {% static 'images/lang-french.png' %} "  alt=""></a>
-												<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-german.png' %} " href="google.com" alt=""></a>
-												<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-italian.png' %} " href="google.com" alt=""></a>
-												<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-portuguese.png' %} " href="google.com" alt=""></a>
-												<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-spanish.png' %} " href="google.com" alt=""></a>
-					            </div>
+												<!--
+												<a href=""> <img class="langflag" src=" {% static 'images/lang-german.png' %} " href="google.com" alt=""></a>
+												<a href=""> <img class="langflag" src=" {% static 'images/lang-italian.png' %} " href="google.com" alt=""></a>
+												<a href=""> <img class="langflag" src=" {% static 'images/lang-portuguese.png' %} " href="google.com" alt=""></a>
+												<a href=""> <img class="langflag" src=" {% static 'images/lang-spanish.png' %} " href="google.com" alt=""></a>
+											-->
+											</div>
 					        </div>
 				</ul>
 		</div>
@@ -96,39 +135,37 @@
 		<div class="menu_content">
 	<nav class="menu_nav text-right">
 		<ul>
-			<li><a href=" # ">Home</a></li>
-			<li><a href=" {% url 'about' %} ">Sobre nosotros</a></li>
-			<li><a href="#">Rooms</a></li>
-			<li><a href=" {% url 'ofertas' %} ">Blog</a></li>
-			<li><a href=" {% static 'contact.html' %} ">Contact</a></li>
+			<li><a href="{% url 'inicio' %}">Inicio</a></li>
+			<li><a href=" {% url 'rooms' %} ">Habitaciones</a></li>
+			<li><a href="{% url 'servicios' %}">Servicios</a></li>
+			<li><a href=" {% url 'ofertas' %} ">Ofertas</a></li>
+			<li><a href="https://reservations.travelclick.com/114062?HotelID=114062&LanguageID=2#/guestsandrooms">Reserva online</a></li>
 		</ul>
 	</nav>
 </div>
 
 		<div class="row" style="padding-right: 40px; margin-top:15px;">
-			<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-english.png' %} " href="google.com" alt=""></a>
-			<a href="inicio/"><img class="langflag" src=" {% static 'images/lang-french.png' %} "  alt=""></a>
-			<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-german.png' %} " href="google.com" alt=""></a>
+			<a href=""> <img class="langflag" src=" {% static 'images/lang-english.png' %} " href="google.com" alt=""></a>
+			<a href=""><img class="langflag" src=" {% static 'images/lang-french.png' %} "  alt=""></a>
 		</div>
-		<div class="row" style="padding-right: 40px; margin-bottom:15px;">
-			<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-italian.png' %} " href="google.com" alt=""></a>
-			<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-portuguese.png' %} " href="google.com" alt=""></a>
-			<a href="google.com"> <img class="langflag" src=" {% static 'images/lang-spanish.png' %} " href="google.com" alt=""></a>
-		</div>
+
 		<div class="menu_extra">
-			<div class="menu_book text-right"><a href="#">Reserve online</a></div>
+			<div class="menu_book text-right"><a href="mailto: ciudad@pretur.com">hotelciudad@pretur.com</a></div>
+
 			<div class="menu_phone d-flex flex-row align-items-center justify-content-center">
 				<a href='tel:+34941250244'>
 				<img src=" {% static 'images/phone-2.png' %} " alt="">
 				<span>(+34) 941 250244</span></a>
 			</div>
+
+
 		</div>
 	</div>
 </div>
 {% block body_block %}
 {% endblock %}
 
-<script src=" {% static 'js/about.js' %} "></script>
+<script src=" {% static 'js/about2.js' %} "></script>
 </body>
 
 
