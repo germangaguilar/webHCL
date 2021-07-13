@@ -372,7 +372,7 @@
 
 	}
 
-	.book_button-alt{
+	.altbookbutton{
 		display: none;
 	}
 	.split_section_title h1
@@ -505,7 +505,7 @@
 
 	.icongoogle
 	{
-		display: block;
+	altbookbutton;
 		height: 18px;
 		margin-left: 15px;
 		margin-bottom: 2px;

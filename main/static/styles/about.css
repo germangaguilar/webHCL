@@ -431,7 +431,7 @@ section
 	color: #ffffff;
 }
 
-.book_button-alt
+.altbookbutton
 {
 	width: 152px;
 	height: 54px;
@@ -444,15 +444,15 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-.book_button-alt:hover
+.altbookbutton:hover
 {
 	background: rgba(255,255,255,0.2);
 }
-.book_button-alt:hover a
+.altbookbutton:hover a
 {
 	color: #ffa37b;
 }
-.book_button-alt a
+.altbookbutton a
 {
 	display: block;
 	width: 100%;
