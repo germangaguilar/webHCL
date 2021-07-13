@@ -289,8 +289,8 @@
 						ubicada a 700 metros.</p>
 						<p></p>
 
-
-
+						<button type="button" class="btn btn-primary">Consulte nuestro mapa</button>
+						<button type="button" class="btn btn-primary">Google Maps</button>
 
 
 						<!-- Milestones-->
@@ -413,8 +413,12 @@
 					<div class="split_section_left_content">
 						<div class="split_section_title"><h1 style="font-size: 60px;">Logroño, capital de La Rioja</h1></div>
 						<div class="split_section_text">
-							<p>Haga desde nuestro hotel cómodas excursiones en el día a cualquier énclave de nuestra región y disfrute de
+							<p>Haga desde nuestro hotel cómodas excursiones en el día a cualquier enclave de nuestra región y disfrute de
 							la variedad gastronómica y paisajística de La Rioja, así como de sus multiples ofertas enoturísticas.</p>
+						</div>
+
+						<div class="container">
+							<a href="https://lariojaturismo.com/" target="_blank"><button type="button" class="btn btn-primary" >La Rioja Turismo</button></a>
 						</div>
 
 					</div>
@@ -441,77 +445,54 @@
 				<div class="row">
 					<div class="col">
 						<div class="footer_logo_container text-center">
+							<div class="footer_logo_container text-center">
+								<div class="footer_logo">
+									<a href="#"></a>
+									<div>Ciudad de Logroño</div>
+									<div></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row footer_row">
 
-					<!-- Address -->
-					<div class="col-lg-3">
-
-					</div>
 
 					<!-- Reservations -->
-					<div class="col-lg-3">
-						<div class="footer_title">Reservations</div>
+					<div class="col-lg-4">
+						<div class="footer_title">Contacto</div>
 						<div class="footer_list">
 							<ul>
-								<li>Tel: 345 5667 889</li>
-								<li>Fax; 6783 4567 889</li>
-								<li>reservations@hotelriver.com</li>
+								<li>Tel: +34 941250244</li>
+								<li>hotelciudad@pretur.com</li>
 							</ul>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="footer_title">Dirección</div>
+						<div class="footer_list">
+							<ul>
+								<li>C/ Menéndez Pelayo, 7</li>
+								<li>26002 Logroño, La Rioja</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="certificates d-flex flex-row align-items-start justify-content-lg-between justify-content-start flex-lg-nowrap flex-wrap">
+							<div class="cert"><img src=" {% static 'images/logopretur.png' %} " alt=""></div>
 						</div>
 					</div>
 
 					<!-- Newsletter -->
 
 
-					<!--Contact form-->
-
-					<div style="margin:80px">
-						<h1>Contact</h1>
-						<h4>Contact us directly if you have any questions</h4>
-						<p>
-							Please write your name, email address and a message below if you have any questions.
-							One of our staff members will be happy to contact you directly and answer your questions as soon as possible.
-						</p>
-						<form method="post">
-				        {% csrf_token %}
-				            {{form.as_p}}
-				            <button type="submit">Submit</button>
-				        </form>
-				    </div>
 
 
-					<div class="col-lg-3">
-						<div class="footer_title">Contacto</div>
-						<div class="newsletter_container">
-							<form method="post">
-					        {% csrf_token %}
-					            {{form.as_p}}
-					            <button type="submit">Enviar</button>
-					     </form>
-						</div>
-					</div>
-
-					<!--					plantilla
-					<div class="col-lg-3">
-						<div class="footer_title">Contacto</div>
-						<div class="newsletter_container">
-							<form action="#" class="newsletter_form" id="newsletter_form">
-								<input type="email" class="newsletter_input" placeholder="Your email address" required="required">
-								<button class="newsletter_button">Subscribe</button>
-							</form>
-						</div>
-					</div>-->
 
 					<!-- Footer images -->
-					<div class="col-lg-3">
-						<div class="certificates d-flex flex-row align-items-start justify-content-lg-between justify-content-start flex-lg-nowrap flex-wrap">
-							<div class="cert"><img src=" {% static 'images/cert_1.png' %} " alt=""></div>
-							<div class="cert"><img src=" {% static 'images/cert_2.png' %} " alt=""></div>
-						</div>
-					</div>
+
 				</div>
 			</div>
 		</div>

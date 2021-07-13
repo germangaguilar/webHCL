@@ -394,6 +394,23 @@ section
 	line-height: 37px;
 }
 
+.logofooter
+{
+	display: block !important;
+	width: 230px;
+	height: 36px;
+	border: solid 2px black;
+	text-align: center;
+}
+.logofooter a
+{
+	display: block !important;
+	font-size: 20px;
+	font-weight: 600;
+	color: black;
+	line-height: 37px;
+}
+
 .dropdown-menu
 {
 	margin-top: 19px;
