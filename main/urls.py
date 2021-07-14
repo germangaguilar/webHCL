@@ -14,4 +14,5 @@ urlpatterns = [
      path("servicios",views.servicios,name='servicios'),
      path("registro",views.register_view,name='registro'),
      path("habitaciones",views.rooms,name='rooms'),
+     path('eng',include('main.urlseng')),
 ]
