@@ -2,24 +2,20 @@
 {% load static %}
 
 {% block extra_head %}
-<link rel="stylesheet" type="text/css" href=" {% static 'styles/theriver_main_styles.css' %} ">
-<link rel="stylesheet" type="text/css" href=" {% static 'styles/about.css' %} ">
-<link rel="stylesheet" type="text/css" href=" {% static 'styles/responsive.css' %} ">
+
 <link rel="stylesheet" href="{% static 'styles/europestyle.css' %}" type="text/css">
 <link rel="stylesheet" href="{% static 'styles/sona-style.css' %}" type="text/css">
 <link rel="stylesheet" href="{% static 'styles/flaticon.css' %}" type="text/css">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/theriver_main_styles.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/about.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/responsive.css' %} ">
 {% endblock %}
 
 {% block extra_header %}
-<nav class="main_nav">
-  <ul class="d-flex flex-row align-items-start justify-content-start">
     <li><a href="{% url 'inicio' %}">Inicio</a></li>
     <li><a href=" {% url 'rooms' %} ">Habitaciones</a></li>
     <li class="active"><a href="{% url 'servicios' %}">Servicios</a></li>
-    <li><a href="#">Ubicación</a></li>
-    <li><a href="tel:+34941250244'"><img src=" {% static 'images/phone.png' %} " alt=""> (+34) 941250244 </a></li>
-  </ul>
-</nav>
+    <li><a href=" {% url 'inicio' %}#ubicacion ">Ubicación</a></li>
 {% endblock %}
 
 {% block body_block %}
@@ -78,8 +74,6 @@
                             <a href="#bar">Zona bar</a>
                             <a href="">/</a>
                             <a href="#workspace">Salón y workspace</a>
-                            <a href="">/</a>
-                            <a href="#parking">Parking (€)</a>
                         </div>
                     </div>
                 </div>
@@ -110,8 +104,7 @@
                                 <h2>Su espacio de trabajo</h2>
                             </div>
                             <p>Nuestro salón está pensado para que pueda quedarse a trabajar con total comodidad.
-                            Podrá hacer uso de nuestros enchufes y nuestra red WiFi, o concertar reuniones laborales. Nuestro
-                            personal les invitará a un café.</p>
+                            Podrá hacer uso de nuestros enchufes y nuestra red WiFi, o concertar reuniones laborales.</p>
 
 
 
@@ -142,6 +135,7 @@
                     </div>
                 </div>
             </div>
+            <!--
             <div class="row" id="parking">
                 <div class="col-lg-6">
                     <div class="ri-slider-item">
@@ -165,91 +159,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </section>
     <!-- Rooms Section End -->
 
-    <!-- Footer -->
-
-    <footer class="footer">
-      <div class="footer_content">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="footer_logo_container text-center">
-                <div class="footer_logo">
-                  <a href="#"></a>
-                  <div>Ciudad de Logroño</div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row footer_row">
-
-            <!-- Address -->
-            <div class="col-lg-3">
-              <div class="footer_title">Our Address</div>
-              <div class="footer_list">
-                <ul>
-                  <li>Beach Str. 345</li>
-                  <li>67559 Miami</li>
-                  <li>USA</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Reservations -->
-            <div class="col-lg-3">
-              <div class="footer_title">Reservations</div>
-              <div class="footer_list">
-                <ul>
-                  <li>Tel: 345 5667 889</li>
-                  <li>Fax; 6783 4567 889</li>
-                  <li>reservations@hotelriver.com</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Newsletter -->
-            <div class="col-lg-3">
-              <div class="footer_title">Newsletter</div>
-              <div class="newsletter_container">
-                <form action="#" class="newsletter_form" id="newsletter_form">
-                  <input type="email" class="newsletter_input" placeholder="Your email address" required="required">
-                  <button class="newsletter_button">Subscribe</button>
-                </form>
-              </div>
-            </div>
-
-            <!-- Footer images -->
-            <div class="col-lg-3">
-              <div class="certificates d-flex flex-row align-items-start justify-content-lg-between justify-content-start flex-lg-nowrap flex-wrap">
-                <div class="cert"><img src=" {% static 'images/cert_1.png' %} " alt=""></div>
-                <div class="cert"><img src=" {% static 'images/cert_2.png' %} " alt=""></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  </div>
-    </footer>
-    <!-- Footer Section End -->
-
-    <!-- Search model Begin -->
-    <div class="search-model">
-        <div class="h-100 d-flex align-items-center justify-content-center">
-            <div class="search-close-switch"><i class="icon_close"></i></div>
-            <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
-            </form>
-        </div>
-    </div>
     <!-- Search model end -->
 
     <!-- Js Plugins-->

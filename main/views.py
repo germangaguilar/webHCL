@@ -118,7 +118,7 @@ def logout_view(request):
 
 def index(request):
     ro=models.rooms.objects.all()
-    return render(request,"index.html",{"ro":ro})
+    return render(request,"eng-inicio.html",{"ro":ro})
 
 def base(request):
     ro=models.rooms.objects.all()

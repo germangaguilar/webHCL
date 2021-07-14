@@ -10,14 +10,10 @@
 {% endblock %}
 
 {% block extra_header %}
-<nav class="main_nav">
-  <ul class="d-flex flex-row align-items-start justify-content-start">
-    <li><a href="{% url 'inicio' %}">Inicio</a></li>
-    <li><a href=" {% url 'rooms' %} ">Habitaciones</a></li>
-    <li><a href="{% url 'servicios' %}">Servicios</a></li>
-    <li><a href="#">Ubicación</a></li>
-  </ul>
-</nav>
+		<li><a href="{% url 'inicio' %}">Inicio</a></li>
+		<li><a href=" {% url 'rooms' %} ">Habitaciones</a></li>
+		<li><a href="{% url 'servicios' %}">Servicios</a></li>
+		<li><a href=" {% url 'inicio' %}#ubicacion ">Ubicación</a></li>
 {% endblock %}
 
 {% block body_block %}

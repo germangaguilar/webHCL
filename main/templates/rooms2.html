@@ -11,15 +11,10 @@
 {% endblock %}
 
 {% block extra_header %}
-<nav class="main_nav">
-  <ul class="d-flex flex-row align-items-start justify-content-start">
     <li><a href="{% url 'inicio' %}">Inicio</a></li>
     <li  class="active"><a href=" {% url 'rooms' %} ">Habitaciones</a></li>
     <li><a href="{% url 'servicios' %}">Servicios</a></li>
-    <li><a href="#">Ubicación</a></li>
-    <li><a href="tel:+34941250244'"><img src=" {% static 'images/phone.png' %} " alt=""> (+34) 941250244 </a></li>
-  </ul>
-</nav>
+    <li><a href=" {% url 'inicio' %}#ubicacion ">Ubicación</a></li>
 {% endblock %}
 
 {% block body_block %}
@@ -78,8 +73,6 @@
                             <a href="#amenities">Amenities</a>
                             <a href="">/</a>
                             <a href="#vistas">Vistas</a>
-                            <a href="">/</a>
-                            <a href="#ninos">Niños</a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +135,7 @@
                                     </tr>
                                     <tr>
                                       <td class="r-o" >Camas:</td>
-                                      <td>Cama doble</td>
+                                      <td>Cama individual</td>
                                     </tr>
                                     <tr>
                                         <td class="r-o" ></td>
@@ -158,7 +151,7 @@
                     <div class="room-item">
                         <img src="{% static 'images/habitacion3mod.jpg' %}" alt="">
                         <div class="ri-text">
-                            <h4>Habitación familiar</h4>
+                            <h4>Habitación matrimonial</h4>
                             <table>
                               <tbody>
                                   <tr>
@@ -167,18 +160,15 @@
                                   </tr>
                                   <tr>
                                       <td class="r-o">Capacidad:</td>
-                                      <td>Tres personas</td>
+                                      <td>Dos personas</td>
 
                                   </tr>
 
                                   <tr>
                                       <td class="r-o" >Camas:</td>
-                                      <td>Dos camas individuales</td>
+                                      <td>Cama doble</td>
                                   </tr>
-                                  <tr>
-                                      <td class="r-o" ></td>
-                                      <td>+ cama supletoria</td>
-                                  </tr>
+
 
                               </tbody>
                             </table>
@@ -212,10 +202,8 @@
                             </div>
                             <span>Amplitud</span>
                             <p>Nuestras habitaciones se caracterizan por su amplio tamaño, óptimo para su comodidad. Disponen de armarios, espejos de cuerpo entero, escritorios y baños con bañera.</p>
-                            <span>Limpieza</span>
-                            <p>Somos muy estrictos con una característica tan fundamental para nuestro servicio como es la limpieza e higiene de nuestras habitaciones.
-                              No contratamos a empresas externas para realizar este trabajo, pues sólo de este
-                            modo podemos ofrerles un servicio de calidad y garantizar mejores condiciones a nuestro personal de limpieza.</p>
+                            <span>Sistema de calidad</span>
+                            <p>Contamos con un estricto sistema de calidad para garantizar su descanso en las mejores condiciones.</p>
                             <span>Amenities</span>
                             <div class="ri-features">
                                 <div class="ri-info">
@@ -291,28 +279,6 @@
                     </div>
                 </div>
             </div>
-            <div class="row" id="ninos">
-                <div class="col-lg-6">
-                    <div class="ri-slider-item">
-                        <div class="ri-sliders owl-carousel">
-                            <div class="single-img set-bg" data-setbg=" {% static 'images/kids.jpg' %} "></div>
-                            <div class="single-img set-bg" data-setbg=" {% static 'images/kids2.jpg' %} "></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="ri-text">
-                        <div class="section-title">
-                            <div class="section-title">
-
-                                <h2>Bebés y niños</h2>
-                            </div>
-                            <p>Sección en construcción</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <!-- Rooms Section End -->
@@ -320,87 +286,7 @@
 
 
 
-    <!-- Footer Section Begin -->
-    <!-- Footer -->
 
-  	<footer class="footer">
-  		<div class="footer_content">
-  			<div class="container">
-  				<div class="row">
-  					<div class="col">
-  						<div class="footer_logo_container text-center">
-  							<div class="footer_logo">
-  								<a href="#"></a>
-  								<div>Ciudad de Logroño</div>
-
-  							</div>
-  						</div>
-  					</div>
-  				</div>
-  				<div class="row footer_row">
-
-  					<!-- Address -->
-  					<div class="col-lg-3">
-  						<div class="footer_title">Our Address</div>
-  						<div class="footer_list">
-  							<ul>
-  								<li>Beach Str. 345</li>
-  								<li>67559 Miami</li>
-  								<li>USA</li>
-  							</ul>
-  						</div>
-  					</div>
-
-  					<!-- Reservations -->
-  					<div class="col-lg-3">
-  						<div class="footer_title">Reservations</div>
-  						<div class="footer_list">
-  							<ul>
-  								<li>Tel: 345 5667 889</li>
-  								<li>Fax; 6783 4567 889</li>
-  								<li>reservations@hotelriver.com</li>
-  							</ul>
-  						</div>
-  					</div>
-
-  					<!-- Newsletter -->
-  					<div class="col-lg-3">
-  						<div class="footer_title">Newsletter</div>
-  						<div class="newsletter_container">
-  							<form action="#" class="newsletter_form" id="newsletter_form">
-  								<input type="email" class="newsletter_input" placeholder="Your email address" required="required">
-  								<button class="newsletter_button">Subscribe</button>
-  							</form>
-  						</div>
-  					</div>
-
-  					<!-- Footer images -->
-  					<div class="col-lg-3">
-  						<div class="certificates d-flex flex-row align-items-start justify-content-lg-between justify-content-start flex-lg-nowrap flex-wrap">
-  							<div class="cert"><img src=" {% static 'images/cert_1.png' %} " alt=""></div>
-  							<div class="cert"><img src=" {% static 'images/cert_2.png' %} " alt=""></div>
-  						</div>
-  					</div>
-  				</div>
-  			</div>
-  		</div>
-  		<div class="copyright">
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  </div>
-  	</footer>
-    <!-- Footer Section End -->
-
-    <!-- Search model Begin -->
-    <div class="search-model">
-        <div class="h-100 d-flex align-items-center justify-content-center">
-            <div class="search-close-switch"><i class="icon_close"></i></div>
-            <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
-            </form>
-        </div>
-    </div>
     <!-- Search model end -->
 
     <!-- Js Plugins-->
