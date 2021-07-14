@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en-eu">
+<head>
+<title>Ciudad de Logroño Hotel (EN)</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Ciudad de Logroño Hotel ">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" type="text/css" href=" {% static 'plugins/OwlCarousel2-2.3.4/owl.carousel.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'plugins/OwlCarousel2-2.3.4/owl.theme.default.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'plugins/OwlCarousel2-2.3.4/animate.css' %} ">
+<link href=" {% static 'plugins/jquery-datepicker/jquery-ui.css' %} " rel="stylesheet" type="text/css">
+<link href=" {% static 'plugins/colorbox/colorbox.css' %} " rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/bootstrap-4.1.2/bootstrap.min.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/main_styles.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/about.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/responsive.css' %} ">
+<link href=" {% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %} " rel="stylesheet" type="text/css">
+
+{% block extra_head %}{% endblock %}
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header">
+
+		<div class="header_content d-flex flex-row align-items-center justify-content-start">
+
+			<div class="logomobile"><a href="{% url 'index' %}">HCL</a></div>
+
+
+			<div class="ml-auto d-flex flex-row align-items-center justify-content-start">
+
+				<nav class="main_nav">
+					<ul class="d-flex flex-row align-items-start justify-content-start">
+						{% block extra_header %}
+						{% endblock %}
+
+
+					 <li style="	font-size: 16px;
+						 font-weight: 500;
+						 color: #ffffff;"><a  data-toggle="dropdown"><img src=" {% static 'images/phone.png' %} " alt="">  Contact  </a>
+						<ul class="dropdown-menu">
+							<div class="dropdown-item">
+													<div class="row" >
+														<a href="tel:+34941250244"  alt=""><p style="	font-size: 16px;
+															font-weight: 500;
+															color: #ffffff;">+34 941 250244</p></a>
+														<!--
+														<a href=""> <img class="langflag" src=" {% static 'images/lang-german.png' %} " href="google.com" alt=""></a>
+														<a href=""> <img class="langflag" src=" {% static 'images/lang-italian.png' %} " href="google.com" alt=""></a>
+														<a href=""> <img class="langflag" src=" {% static 'images/lang-portuguese.png' %} " href="google.com" alt=""></a>
+														<a href=""> <img class="langflag" src=" {% static 'images/lang-spanish.png' %} " href="google.com" alt=""></a>
+													-->
+													</div>
+
+													<div class="row">
+														<a href="mailto: ciudad@pretur.com"alt=""><p style="	font-size: 16px;
+															font-weight: 500;
+															color: #ffffff;">ciudad@pretur.com</p></a>
+
+													</div>
+											</div>
+						</ul>
+						</li>
+						</ul>
+
+				</nav>
+
+
+
+
+
+				<!--
+				{% if user.is_authenticated %}
+				<div class="book_button"><a href=" {% url 'logout' %} ">Cerrar sesión</a></div>
+				{% else %}
+				<div class="book_button"><a href=" {% url 'register' %} ">Login / Registro</a></div>
+				{% endif %}
+
+				<div class="dropdown">
+					<a href="#" data-toggle="dropdown"><img class="phoneicon" src=" {% static 'images/phone.png' %} "  alt="nada"> </a>
+					<ul class="dropdown-menu">
+						<div class="dropdown-item">
+							<a href="tel:+34941250244'"> (+34) 941250244 alt=""></a>
+						</div>
+					</ul>
+				</div>
+
+				<div class="header_phone d-flex flex-row align-items-center justify-content-center"><a href='tel:+34941250244'>
+					<img src=" {% static 'images/phone.png' %} " alt=""></a>
+				</div>
+			-->
+
+			<div class="altbookbutton" style="width: 120px;"><a href="{% url 'ofertas' %}">Offers</a></div>
+			<div class="book_button" style="margin-left: 10px;"><a href="https://reservations.travelclick.com/114062?HotelID=114062&LanguageID=2#/guestsandrooms">Online booking</a></div>
+
+
+
+
+		<div class="dropdown" style= "margin-left: 6px">
+				<a href="#" data-toggle="dropdown"><img class="langflag" src=" {% static 'images/lang-english.png' %} "  alt="nada"> </a>
+				<ul class="dropdown-menu">
+					<div class="dropdown-item">
+					            <div class="row">
+												<a href="{% url 'inicio' %}"> <img class="langflag" src=" {% static 'images/lang-spanish.png' %} " alt=""></a>
+												<a href=""><img class="langflag" src=" {% static 'images/lang-french.png' %} "  alt=""></a>
+												<!--
+												<a href=""> <img class="langflag" src=" {% static 'images/lang-german.png' %} " href="google.com" alt=""></a>
+												<a href=""> <img class="langflag" src=" {% static 'images/lang-italian.png' %} " href="google.com" alt=""></a>
+												<a href=""> <img class="langflag" src=" {% static 'images/lang-portuguese.png' %} " href="google.com" alt=""></a>
+												<a href=""> <img class="langflag" src=" {% static 'images/lang-spanish.png' %} " href="google.com" alt=""></a>
+											-->
+											</div>
+					        </div>
+				</ul>
+		</div>
+
+				<!-- Hamburger Menu -->
+			<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		</div>
+	</div>
+</header>
+
+	<!-- Menu -->
+
+	<div class="menu trans_400 d-flex flex-column align-items-end justify-content-start">
+		<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+		<div class="menu_content">
+	<nav class="menu_nav text-right">
+		<ul>
+			<li><a href="{% url 'inicio' %}">Index</a></li>
+			<li><a href=" {% url 'rooms' %} ">Rooms</a></li>
+			<li><a href="{% url 'servicios' %}">Discover</a></li>
+			<li><a href=" {% url 'ofertas' %} ">Offers</a></li>
+			<li><a href="https://reservations.travelclick.com/114062?HotelID=114062&LanguageID=2#/guestsandrooms">Online booking</a></li>
+		</ul>
+	</nav>
+</div>
+
+		<div class="row" style="padding-right: 40px; margin-top:15px;">
+			<a href=""> <img class="langflag" src=" {% static 'images/lang-english.png' %} " alt=""></a>
+			<a href=""><img class="langflag" src=" {% static 'images/lang-french.png' %} "  alt=""></a>
+		</div>
+
+		<div class="menu_extra">
+			<div class="menu_book text-right"><a href="mailto: ciudad@pretur.com">hotelciudad@pretur.com</a></div>
+
+			<div class="menu_phone d-flex flex-row align-items-center justify-content-center">
+				<a href='tel:+34941250244'>
+				<img src=" {% static 'images/phone-2.png' %} " alt="">
+				<span>(+34) 941 250244</span></a>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+{% block body_block %}
+{% endblock %}
+
+<!-- Footer -->
+
+<footer class="footer">
+	<div class="footer_content">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="footer_logo_container text-center">
+						<div class="footer_logo_container text-center">
+							<div class="footer_logo">
+								<a href="#"></a>
+								<div>Ciudad de Logroño</div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_row">
+
+
+
+				<!-- Reservations -->
+				<div class="col-lg-4" style="margin-left:105px">
+					<div class="footer_title">Contact</div>
+					<div class="footer_list">
+						<ul>
+							<li>Tel: +34 941250244</li>
+							<li>hotelciudad@pretur.com</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="footer_title">Address</div>
+					<div class="footer_list">
+						<ul>
+							<li>C/ Menéndez Pelayo, 7</li>
+							<li>26002 Logroño, La Rioja</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-2">
+					<div class="certificates d-flex flex-row align-items-start justify-content-lg-between justify-content-start flex-lg-nowrap flex-wrap">
+						<a href="https://pretur.com/" target="_blank">
+						<div class="cert"><img src=" {% static 'images/logopretur.png' %} " alt=""></div></a>
+					</div>
+				</div>
+
+				<!-- Newsletter -->
+
+
+
+
+
+				<!-- Footer images -->
+
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</div>
+</footer>
+
+<script src=" {% static 'js/about2.js' %} "></script>
+</body>
+
+
+
+
+
+
+</html>

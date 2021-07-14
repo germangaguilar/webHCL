@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "eng-base.html" %}
 {% load static %}
 
 {% block extra_head %}
@@ -8,10 +8,10 @@
 {% endblock %}
 
 {% block extra_header %}
-		<li class="active"><a href="{% url 'inicio' %}">Inicio</a></li>
-		<li><a href=" {% url 'rooms' %} ">Habitaciones</a></li>
-		<li><a href="{% url 'servicios' %}">Servicios</a></li>
-		<li><a href="#ubicacion">Ubicación</a></li>
+		<li class="active"><a href="{% url 'index' %}">Index</a></li>
+		<li><a href=" {% url 'rooms' %} ">Rooms</a></li>
+		<li><a href="{% url 'servicios' %}">Discover</a></li>
+		<li><a href="#ubicacion">Location</a></li>
 {% endblock %}
 
 {% block body_block %}
@@ -28,17 +28,16 @@
 				<div class="row">
 					<div class="col">
 						<div class="home_content text-center">
-							<div class="home_title">Hotel Ciudad de Logroño ⭑⭑⭑</div>
+							<div class="home_title">Ciudad de Logroño Hotel ⭑⭑⭑</div>
 							<a href="#promocion">
-							<div class="home_title2">Conozca las ventajas de reservar en nuestra web</div>
+							<div class="home_title2">Discover the advantages of booking on our website</div>
 							</a>
 
 							<div class="booking_form_container">
 
 								<form action="https://reservations.travelclick.com/114062" method="get" name="resform" id="resform" target="_blank">
 										<input type="hidden" name="HotelID" value="114062" />
-										<input type="hidden" name="LanguageID" value="2" />
-										<input type="hidden" name="Rooms" value="1" />
+										<input type="hidden" name="LanguageID" value="1" />
 
 										<input type="hidden" class="pruebafecha booking_input booking_input_a booking_in" id="tr_DateIn" name="pruebafecha" id="pruebafecha"  />
 
@@ -146,7 +145,7 @@
 			<div class="row">
 
 				<div class="col-xl-6 order-xl-1 order-1">
-					<div class="about_title"><h1>Las ventajas de reservar con nosotros</h1></div>
+					<div class="about_title"><h1>Benefits of booking with us</h1></div>
 
 
 
@@ -161,7 +160,7 @@
 					</div>-->
 					<div class="about_content">
 						<div class="about_text">
-							<p>Promoción aplicable a reservas directas: puede escribirnos un correo, reservar por teléfono o reservar en nuestra página.</p>
+							<p>Promotion applicable to direct bookings: you can write us an email, book by phone or book on our website.</p>
 						</div>
 						<!--<div class="about_sig"><img src=" {% static 'images/sig.png' %} " alt=""></div>-->
 					</div>
@@ -181,22 +180,22 @@
 					<div class="about_content" style="margin-top: 0px; margin-left:10px">
 						<div class="box justify-right" style="margin-top: 15px; margin-left:10px">
 
-							<div class="popover1" align="right"><a class="textbox" tabindex="0" data-toggle="popover" placement="center" ><h3 align="right">Garantía de precio mínimo</h3> </a></div>
+							<div class="popover1" align="right"><a class="textbox" tabindex="0" data-toggle="popover" placement="center" ><h3 align="right">Minimum price guarantee</h3> </a></div>
 							<!--<div class="icon-home"><img  src=" {% static 'images/icon-price1.svg' %} "> </div>-->
 						</div>
 					<div class="box" style="margin-top: 15px; margin-left:10px" >
 
-						<div class="popover2"><a class="textbox"  tabindex="0" data-toggle="popover" data-container=".well" data-trigger="focus" ><h3> Desayuno incluido</h3> </a></div>
+						<div class="popover2"><a class="textbox"  tabindex="0" data-toggle="popover" data-container=".well" data-trigger="focus" ><h3> Breakfast included</h3> </a></div>
 						<!--<div  class="icon-home"><img  src=" {% static 'images/icon-breakfast1.svg' %} "></div>-->
 					</div>
 					<div class="box" style="margin-top: 15px; margin-left:10px">
 
-						<div class="popover3"><a class="textbox"  tabindex="0" data-toggle="popover"  data-trigger="focus" placement="up"> <h3>Cancelación gratuita (48h)</h3> </a></div>
+						<div class="popover3"><a class="textbox"  tabindex="0" data-toggle="popover"  data-trigger="focus" placement="up"> <h3>Free cancellation (48h)</h3> </a></div>
 						<!--<div class="icon-home"><img  src=" {% static 'images/icon-cancelation3.svg' %} "></div>-->
 					</div>
 					<div class="box" style="margin-top: 15px; margin-left:10px">
 
-						<div class="popover4"><a class="textbox"  tabindex="0" data-toggle="popover"  data-trigger="focus" placement="up"> <h3>Sin pagos por adelantado </h3></a></div>
+						<div class="popover4"><a class="textbox"  tabindex="0" data-toggle="popover"  data-trigger="focus" placement="up"> <h3>No upfront payments </h3></a></div>
 						<!--<div class="icon-home"><img  src=" {% static 'images/icon-payment1.svg' %} "></div>-->
 					</div>
 					</div>
@@ -262,7 +261,7 @@
 				<div class="col">
 					<div class="blog_title" style="text-align:center; font-size: 30px;
 					font-weight: 500;
-					color: #abbaaa"><a   href="">Comentarios de nuestros clientes</a></div>
+					color: #abbaaa"><a   href="">Comments from our guests</a></div>
 					<p></p>
 					<!-- Begin widget code -->
 					<div data-rw-slider="23292"></div>
@@ -282,14 +281,9 @@
 				<!-- About Content -->
 				<div class="col-lg-6">
 					<div class="about_content">
-						<div class="about_title"><h2>En el corazón de Logroño</h2></div>
+						<div class="about_title"><h2>At the heart of Logroño</h2></div>
 						<div class="about_text">
-							<p>La ubicación del hotel ofrece todo tipo de comodidades, permitiendo desplazarse a pie hasta la estación de tren,
-							de autobús, al casco antiguo, a las mejores zonas comerciales de la ciudad, y por supuesto a la famosa calle del Laurel,
-						ubicada a 700 metros.</p>
-						<p></p>
-
-						<button type="button" class="btn btn-primary">Consulte nuestro mapa</button>
+							<p>The hotel's location offers all kinds of possibilities, as it is within walking distance of the train station, the bus station, the old town, the best shopping areas and, of course, the famous Laurel Street, located just 700 metres away.</p>
 						<button type="button" class="btn btn-primary">Google Maps</button>
 
 
@@ -301,7 +295,7 @@
 								<div class="milestone_content">
 									<a href="https://www.google.com/maps/dir/42.4603938,-2.4478493/42.4655602,-2.4475056/@42.4629168,-2.4522089,16z/data=!4m2!4m1!3e2?hl=es" target="_blank">
 									<div class="milestone_counter"  data-end-value="700"  data-sign-after="m">650</div>
-									<div class="milestone_title">Calle del Laurel</div></a>
+									<div class="milestone_title">Laurel Street</div></a>
 								</div>
 							</div>
 
@@ -310,7 +304,7 @@
 								<div class="milestone_content">
 									<a href="https://www.google.es/maps/dir/Hotel+Ciudad+de+Logro%C3%B1o,+Calle+Men%C3%A9ndez+Pelayo,+Logro%C3%B1o/42.464338,-2.4466285/@42.4636526,-2.4529556,15.5z/data=!4m9!4m8!1m5!1m1!1s0xd5aab4432e4008b:0x8e3ef3622e2f786d!2m2!1d-2.4478493!2d42.4603938!1m0!3e3?hl=es" target="_blank">
 									<div class="milestone_counter" data-start-value="100" data-end-value="600"  data-sign-after="m">450</div>
-									<div class="milestone_title">Plaza del Espolón</div></a>
+									<div class="milestone_title">'Plaza del Espolón'</div></a>
 								</div>
 							</div>
 
@@ -349,12 +343,9 @@
 
 				<div class="col-xl-6 order-xl-2 order-1">
 					<div class="split_section_right_content">
-						<div class="split_section_title"><h1 style="font-size: 52px;">Ideal para viajes de trabajo</h1></div>
+						<div class="split_section_title"><h1 style="font-size: 52px;">Perfect for business trips</h1></div>
 						<div class="split_section_text">
-							<p>Nuestras amplias habitaciones y la tranquilidad del parque ubicado frente al hotel le garantizarán
-							un descanso reparador. Si ha venido a trabajar o a concertar una reunión, puede hacer uso de nuestro salón, donde podrá conectar su portátil
-							y utilizar nuestra WiFi.
-						¿Desea un ambiente más distendido? Pruebe nuestra luminosa zona de bar.</p>
+							<p>Our spacious rooms and the quiet park in front of the hotel will guarantee you a good night's sleep. If you have come to work or to organise a meeting, you can make use of our lounge, where you can connect your laptop and use our WiFi. Looking for a more relaxed atmosphere? Try our bright bar area.</p>
 						</div>
 
 						<!-- Loaders -->
@@ -411,14 +402,13 @@
 			<div class="row">
 				<div class="col-xl-6">
 					<div class="split_section_left_content">
-						<div class="split_section_title"><h1 style="font-size: 60px;">Logroño, capital de La Rioja</h1></div>
+						<div class="split_section_title"><h1 style="font-size: 60px;">Logroño, capital of La Rioja</h1></div>
 						<div class="split_section_text">
-							<p>Haga desde nuestro hotel cómodas excursiones en el día a cualquier enclave de nuestra región y disfrute de
-							la variedad gastronómica y paisajística de La Rioja, así como de sus multiples ofertas enoturísticas.</p>
+							<p>Make comfortable day trips from our hotel to any point in our region and enjoy the gastronomic and scenic variety of La Rioja, as well as its multiple wine tourism offer.</p>
 						</div>
 
 						<div class="container">
-							<a href="https://lariojaturismo.com/" target="_blank"><button type="button" class="btn btn-primary" >La Rioja Turismo</button></a>
+							<a href="https://lariojaturismo.com/en" target="_blank"><button type="button" class="btn btn-primary" >La Rioja Turismo</button></a>
 						</div>
 
 					</div>
