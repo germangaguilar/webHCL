@@ -126,7 +126,7 @@
 						<div class="about_content" style="margin-top: 0px; margin-left:10px">
 							<div class="box" style="margin-top: 15px; margin-left:10px">
 
-								<div class="popover1"><a class="textbox" tabindex="0" data-toggle="popover" placement="center" ><h3 align="right">Garantía de precio mínimo</h3> </a></div>
+								<div class="popover1"><a class="textbox" tabindex="0" data-toggle="popover" placement="center" ><h3 align="right">Minimum price guarantee</h3> </a></div>
 								<!--<div class="icon-home"><img  src=" {% static 'images/icon-price1.svg' %} "> </div>-->
 
 							</div>
@@ -134,17 +134,17 @@
 
 						<div class="box" style="margin-top: 15px; margin-left:10px" >
 
-							<div class="popover2"><a class="textbox"  tabindex="0" data-toggle="popover" data-container=".well" data-trigger="focus" ><h3> Desayuno incluido</h3> </a></div>
+							<div class="popover2"><a class="textbox"  tabindex="0" data-toggle="popover" data-container=".well" data-trigger="focus" ><h3> Breakfast included</h3> </a></div>
 							<!--<div  class="icon-home"><img  src=" {% static 'images/icon-breakfast1.svg' %} "></div>-->
 						</div>
 						<div class="box" style="margin-top: 15px; margin-left:10px">
 
-							<div class="popover3"><a class="textbox"  tabindex="0" data-toggle="popover"  data-trigger="focus" placement="up"> <h3>Cancelación gratuita (48h)</h3> </a></div>
+							<div class="popover3"><a class="textbox"  tabindex="0" data-toggle="popover"  data-trigger="focus" placement="up"> <h3>Free cancellation (48h)</h3> </a></div>
 							<!--<div class="icon-home"><img  src=" {% static 'images/icon-cancelation3.svg' %} "></div>-->
 						</div>
 						<div class="box" style="margin-top: 15px; margin-left:10px">
 
-							<div class="popover4"><a class="textbox"  tabindex="0" data-toggle="popover"  data-trigger="focus" placement="up"> <h3>Sin pagos por adelantado </h3></a></div>
+							<div class="popover4"><a class="textbox"  tabindex="0" data-toggle="popover"  data-trigger="focus" placement="up"> <h3>No upfront payments </h3></a></div>
 							<!--<div class="icon-home"><img  src=" {% static 'images/icon-payment1.svg' %} "></div>-->
 						</div>
 						</div>
@@ -235,6 +235,44 @@
     <script src=" {% static 'plugins/colorbox/jquery.colorbox-min.js' %} "></script>
     <script src=" {% static 'js/custom.js' %} "></script>
     <script src=" {% static 'js/about.js' %} "></script>
+
+		<script>
+		$(document).ready(function(){
+		  $('[data-toggle="popover"]').popover({
+		    container: '.well'
+		  });
+		});
+		</script>
+
+
+
+		<script>
+			var elem1 = '<div class="textbox"><a href=""><p1>If you find a lower price than the one offered on our website for the same dates, please contact us.</p1></a></div>';
+		$(document).ready(function(){
+		  $('.popover1').popover({content: elem1, trigger:"focus", html: true});
+		});
+		</script>
+
+		<script>
+			var elem2 = '<div class="textbox"><a href=""><p1>The web booking includes our breakfast, at no extra cost.</p1></a></div>';
+		$(document).ready(function(){
+		  $('.popover2').popover({content: elem2, trigger:"focus", html: true});
+		});
+		</script>
+
+		<script>
+			var elem3 = '<div class="textbox"  ><a href=""><p1>Change of plans? With a limit of 48 hours notice, you can cancel your booking without any obligation.</p1></a></div>';
+		$(document).ready(function(){
+		  $('.popover3').popover({content: elem3, trigger:"focus", html: true});
+		});
+		</script>
+
+		<script>
+			var elem4 = '<div class="textbox"  ><a href=""><p1>For convenience and flexibility, we will not ask you for any payment in advance.</p1></a></div>';
+		$(document).ready(function(){
+		  $('.popover4').popover({content: elem4, trigger:"focus", html: true});
+		});
+		</script>
 
 
 

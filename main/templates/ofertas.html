@@ -236,6 +236,43 @@
     <script src=" {% static 'js/custom.js' %} "></script>
     <script src=" {% static 'js/about.js' %} "></script>
 
+		<script>
+		$(document).ready(function(){
+		  $('[data-toggle="popover"]').popover({
+		    container: '.well'
+		  });
+		});
+		</script>
+
+
+
+		<script>
+			var elem1 = '<div class="textbox"><a href=""><p1>Si encuentra un precio inferior al que le ofrece nuestra web para las mismas fechas, contacte con nosotros.</p1></a></div>';
+		$(document).ready(function(){
+		  $('.popover1').popover({content: elem1, trigger:"focus", html: true});
+		});
+		</script>
+
+		<script>
+			var elem2 = '<div class="textbox"><a href=""><p1>La reserva web incluye nuestro desayuno, sin ningún coste adicional.</p1></a></div>';
+		$(document).ready(function(){
+		  $('.popover2').popover({content: elem2, trigger:"focus", html: true});
+		});
+		</script>
+
+		<script>
+			var elem3 = '<div class="textbox"  ><a href=""><p1>¿Cambio de planes? Con un límite de 48h de antelación, podrá cancelar su reserva sin ningún tipo de compromiso.</p1></a></div>';
+		$(document).ready(function(){
+		  $('.popover3').popover({content: elem3, trigger:"focus", html: true});
+		});
+		</script>
+
+		<script>
+			var elem4 = '<div class="textbox"  ><a href=""><p1>Para mayor comodidad y flexibilidad, no le pediremos ningún pago por adelantado.</p1></a></div>';
+		$(document).ready(function(){
+		  $('.popover4').popover({content: elem4, trigger:"focus", html: true});
+		});
+		</script>
 
 
 {% endblock %}

@@ -45,17 +45,17 @@
 									<label for="pick_date"> </label>
 									<div class="d-flex flex-xl-row flex-column align-items-start justify-content-start">
 										<div class="booking_input_container d-flex flex-row align-items-start justify-content-start flex-wrap">
-											<div><input type="text" class="datepicker booking_input booking_input_a booking_in" placeholder="Entrada / Check in"
+											<div><input type="text" class="datepicker booking_input booking_input_a booking_in" placeholder="Arrivée / Check in"
 												value=.pruebafecha name="DateIn" id="DateIn"></div>
-											<div><input type="text" class="datepicker booking_input booking_input_a booking_out" placeholder="Salida / Check out"
+											<div><input type="text" class="datepicker booking_input booking_input_a booking_out" placeholder="Départ / Check out"
 												value="{{ fecha_salida }}" name="DateOut"></div>
-											<div><input type="number" class="booking_input booking_input_b" placeholder="Adultos"
-												value="{{ num_adultos }}" name="num_adultos"></div>
-											<div><input type="number" class="booking_input booking_input_b" placeholder="Niños"
-												value="{{ num_ninos }}" name="num_ninos"></div>
+											<div><input type="number" class="booking_input booking_input_b" placeholder="Adultes"
+												value="{{ num_adultos }}" name="Adults"></div>
+											<div><input type="number" class="booking_input booking_input_b" placeholder="Enfants"
+												value="{{ num_ninos }}" name="Children"></div>
 										</div>
-										<div class="booking_button_container1"><button class="booking_button trans_200"  type="submit" value="Submit">Disponibilidad</button></div>
-										<div class="booking_button_container2"><button class="booking_button trans_200"  type="submit" value="Submit">Disponibilidad</button></div>
+										<div class="booking_button_container1"><button class="booking_button trans_200"  type="submit" value="Submit">Disponibilité</button></div>
+										<div class="booking_button_container2"><button class="booking_button trans_200"  type="submit" value="Submit">Disponibilité</button></div>
 									</div>
 								</form>
 
@@ -180,22 +180,22 @@
 					<div class="about_content" style="margin-top: 0px; margin-left:10px">
 						<div class="box justify-right" style="margin-top: 15px; margin-left:10px">
 
-							<div class="popover1" align="right"><a class="textbox" tabindex="0" data-toggle="popover" placement="center" ><h3 align="right">Minimum price guarantee</h3> </a></div>
+							<div class="popover1" align="right"><a class="textbox" tabindex="0" data-toggle="popover" placement="center" ><h3 align="right">Garantie de prix minimum</h3> </a></div>
 							<!--<div class="icon-home"><img  src=" {% static 'images/icon-price1.svg' %} "> </div>-->
 						</div>
 					<div class="box" style="margin-top: 15px; margin-left:10px" >
 
-						<div class="popover2"><a class="textbox"  tabindex="0" data-toggle="popover" data-container=".well" data-trigger="focus" ><h3> Breakfast included</h3> </a></div>
+						<div class="popover2"><a class="textbox"  tabindex="0" data-toggle="popover" data-container=".well" data-trigger="focus" ><h3> Petit-déjeuner inclus</h3> </a></div>
 						<!--<div  class="icon-home"><img  src=" {% static 'images/icon-breakfast1.svg' %} "></div>-->
 					</div>
 					<div class="box" style="margin-top: 15px; margin-left:10px">
 
-						<div class="popover3"><a class="textbox"  tabindex="0" data-toggle="popover"  data-trigger="focus" placement="up"> <h3>Free cancellation (48h)</h3> </a></div>
+						<div class="popover3"><a class="textbox"  tabindex="0" data-toggle="popover"  data-trigger="focus" placement="up"> <h3>Annulation gratuite (48h)</h3> </a></div>
 						<!--<div class="icon-home"><img  src=" {% static 'images/icon-cancelation3.svg' %} "></div>-->
 					</div>
 					<div class="box" style="margin-top: 15px; margin-left:10px">
 
-						<div class="popover4"><a class="textbox"  tabindex="0" data-toggle="popover"  data-trigger="focus" placement="up"> <h3>No upfront payments </h3></a></div>
+						<div class="popover4"><a class="textbox"  tabindex="0" data-toggle="popover"  data-trigger="focus" placement="up"> <h3>Pas de paiement anticipé</h3></a></div>
 						<!--<div class="icon-home"><img  src=" {% static 'images/icon-payment1.svg' %} "></div>-->
 					</div>
 					</div>
@@ -356,7 +356,7 @@
 
 								<div class="loader text-center" data-perc="0.92">
 									<div class="loader_content">
-										<div class="loader_title" style="margin-top:5px"><div class="popover5"><a  tabindex="0" data-toggle="popover" placement="center" ><p>Servicio</p> </a></div></div>
+										<div class="loader_title" style="margin-top:5px"><div class="popover5"><a  tabindex="0" data-toggle="popover" placement="center" ><p>Service</p> </a></div></div>
 									<img class="icongoogle" src=" {% static 'images/icon-google3.png' %} " alt="">
 									</div>
 								</div>
@@ -367,7 +367,7 @@
 
 								<div class="loader text-center" data-perc="0.9">
 									<div class="loader_content">
-										<div class="loader_title" style="margin-top:10px"><div class="popover6"><a  tabindex="0" data-toggle="popover" placement="center" ><p>Negocios</p> </a></div></div>
+										<div class="loader_title" style="margin-top:10px"><div class="popover6"><a  tabindex="0" data-toggle="popover" placement="center" ><p>Business</p> </a></div></div>
 									<img  class="iconexpedia" src=" {% static 'images/icon-expedia4.png' %} " alt="">
 									</div>
 								</div>
@@ -377,7 +377,7 @@
 							<div class="loader_container text-center">
 								<div class="loader text-center" data-perc="0.97">
 									<div class="loader_content">
-										<div class="loader_title" style="margin-top:10px"><div class="popover7"><a  tabindex="0" data-toggle="popover" placement="center" ><p>Ubicación</p> </a></div></div>
+										<div class="loader_title" style="margin-top:10px"><div class="popover7"><a  tabindex="0" data-toggle="popover" placement="center" ><p>Localisation</p> </a></div></div>
 									<img class="icontrip" src=" {% static 'images/icon-tripadvisor3.png' %} " alt=""></a>
 									</div>
 								</div>

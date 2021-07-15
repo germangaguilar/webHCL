@@ -45,17 +45,17 @@
 									<label for="pick_date"> </label>
 									<div class="d-flex flex-xl-row flex-column align-items-start justify-content-start">
 										<div class="booking_input_container d-flex flex-row align-items-start justify-content-start flex-wrap">
-											<div><input type="text" class="datepicker booking_input booking_input_a booking_in" placeholder="Entrada / Check in"
+											<div><input type="text" class="datepicker booking_input booking_input_a booking_in" placeholder="Check in"
 												value=.pruebafecha name="DateIn" id="DateIn"></div>
-											<div><input type="text" class="datepicker booking_input booking_input_a booking_out" placeholder="Salida / Check out"
+											<div><input type="text" class="datepicker booking_input booking_input_a booking_out" placeholder="Check out"
 												value="{{ fecha_salida }}" name="DateOut"></div>
-											<div><input type="number" class="booking_input booking_input_b" placeholder="Adultos"
-												value="{{ num_adultos }}" name="num_adultos"></div>
-											<div><input type="number" class="booking_input booking_input_b" placeholder="Niños"
-												value="{{ num_ninos }}" name="num_ninos"></div>
+											<div><input type="number" class="booking_input booking_input_b" placeholder="Adults"
+												value="{{ num_adultos }}" name="Adults"></div>
+											<div><input type="number" class="booking_input booking_input_b" placeholder="Children"
+												value="{{ num_ninos }}" name="Children"></div>
 										</div>
-										<div class="booking_button_container1"><button class="booking_button trans_200"  type="submit" value="Submit">Disponibilidad</button></div>
-										<div class="booking_button_container2"><button class="booking_button trans_200"  type="submit" value="Submit">Disponibilidad</button></div>
+										<div class="booking_button_container1"><button class="booking_button trans_200"  type="submit" value="Submit">Availability</button></div>
+										<div class="booking_button_container2"><button class="booking_button trans_200"  type="submit" value="Submit">Availability</button></div>
 									</div>
 								</form>
 
@@ -463,49 +463,49 @@ $(document).ready(function(){
 
 
 <script>
-	var elem1 = '<div class="textbox"><a href=""><p1>Si encuentra un precio inferior al que le ofrece nuestra web para las mismas fechas, contacte con nosotros.</p1></a></div>';
+	var elem1 = '<div class="textbox"><a href=""><p1>If you find a lower price than the one offered on our website for the same dates, please contact us.</p1></a></div>';
 $(document).ready(function(){
   $('.popover1').popover({content: elem1, trigger:"focus", html: true});
 });
 </script>
 
 <script>
-	var elem2 = '<div class="textbox"><a href=""><p1>La reserva web incluye nuestro desayuno, sin ningún coste adicional.</p1></a></div>';
+	var elem2 = '<div class="textbox"><a href=""><p1>The web booking includes our breakfast, at no extra cost.</p1></a></div>';
 $(document).ready(function(){
   $('.popover2').popover({content: elem2, trigger:"focus", html: true});
 });
 </script>
 
 <script>
-	var elem3 = '<div class="textbox"  ><a href=""><p1>¿Cambio de planes? Con un límite de 48h de antelación, podrá cancelar su reserva sin ningún tipo de compromiso.</p1></a></div>';
+	var elem3 = '<div class="textbox"  ><a href=""><p1>Change of plans? With a limit of 48 hours notice, you can cancel your booking without any obligation.</p1></a></div>';
 $(document).ready(function(){
   $('.popover3').popover({content: elem3, trigger:"focus", html: true});
 });
 </script>
 
 <script>
-	var elem4 = '<div class="textbox"  ><a href=""><p1>Para mayor comodidad y flexibilidad, no le pediremos ningún pago por adelantado.</p1></a></div>';
+	var elem4 = '<div class="textbox"  ><a href=""><p1>For convenience and flexibility, we will not ask you for any payment in advance.</p1></a></div>';
 $(document).ready(function(){
   $('.popover4').popover({content: elem4, trigger:"focus", html: true});
 });
 </script>
 
 <script>
-	var elem5 = '<div class="textbox"  ><a href=""><p1>Valoración de 4,6/5 puntos en el apartado <i>Servicio</i> de las reseñas de Google a día 10/07/2021</p1></a></div>';
+	var elem5 = '<div class="textbox"  ><a href=""><p1>Rating of 4.6/5 points in the <i>Service</i> section of Google reviews as of 10 July 2021.</p1></a></div>';
 $(document).ready(function(){
   $('.popover5').popover({content: elem5, trigger:"focus", html: true});
 });
 </script>
 
 <script>
-	var elem6 = '<div class="textbox"  ><a href=""><p1>Nota media de 4,5/5 puntos en las valoraciones de viajeros etiquetados como <i>Viajes de negocios</i> en Expedia a día 10/07/2021</p1></a></div>';
+	var elem6 = '<div class="textbox"  ><a href=""><p1>Average score of 4.5/5 points for traveller ratings tagged as <i>Business Travel</i> on Expedia as of 10 July 2021.</p1></a></div>';
 $(document).ready(function(){
   $('.popover6').popover({content: elem6, trigger:"focus", html: true});
 });
 </script>
 
 <script>
-	var elem7 = '<div class="textbox"  ><a href=""><p1>Valoración de 97/100 puntos en el apartado <i>Ubicación</i> de TripAdvisor a día 10/07/2021</p1></a></div>';
+	var elem7 = '<div class="textbox"  ><a href=""><p1>97/100 points rating on TripAdvisor's <i>Location</i> as of 10 July 2021.</p1></a></div>';
 $(document).ready(function(){
   $('.popover7').popover({content: elem7, trigger:"focus", html: true});
 });
