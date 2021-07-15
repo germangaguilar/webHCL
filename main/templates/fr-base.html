@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="es-ES">
+<html lang="fr-eu">
 <head>
-<title>Hotel Ciudad de Logroño</title>
+<title>Hôtel Ciudad de Logroño (FR)</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Hotel Ciudad de Logroño">
+<meta name="description" content="Ciudad de Logroño Hotel ">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -32,7 +32,7 @@
 
 		<div class="header_content d-flex flex-row align-items-center justify-content-start">
 
-			<div class="logomobile"><a href="{% url 'inicio' %}">HCL</a></div>
+			<div class="logomobile"><a href="{% url 'index' %}">HCL</a></div>
 
 
 			<div class="ml-auto d-flex flex-row align-items-center justify-content-start">
@@ -45,7 +45,7 @@
 
 					 <li style="	font-size: 16px;
 						 font-weight: 500;
-						 color: #ffffff;"><a  data-toggle="dropdown"><img src=" {% static 'images/phone.png' %} " alt="">  Contacto  </a>
+						 color: #ffffff;"><a  data-toggle="dropdown"><img src=" {% static 'images/phone.png' %} " alt="">  Contact  </a>
 						<ul class="dropdown-menu">
 							<div class="dropdown-item">
 													<div class="row" >
@@ -98,19 +98,19 @@
 				</div>
 			-->
 
-			<div class="altbookbutton" style="width: 120px;"><a href="{% url 'ofertas' %}">Ofertas</a></div>
-			<div class="book_button" style="margin-left: 10px;"><a href="https://reservations.travelclick.com/114062?HotelID=114062&LanguageID=2#/guestsandrooms">Reserva online</a></div>
+			<div class="altbookbutton" style="width: 120px;"><a href="{% url 'froffers' %}">Offres</a></div>
+			<div class="book_button" style="margin-left: 10px;"><a href="https://reservations.travelclick.com/114062?HotelID=114062&LanguageID=1#/guestsandrooms">Online booking</a></div>
 
 
 
 
 		<div class="dropdown" style= "margin-left: 6px">
-				<a href="#" data-toggle="dropdown"><img class="langflag" src=" {% static 'images/lang-spanish.png' %} "  alt="nada"> </a>
+				<a href="{% url 'frindex' %}" data-toggle="dropdown"><img class="langflag" src=" {% static 'images/lang-french.png' %} "  alt="nada"> </a>
 				<ul class="dropdown-menu">
 					<div class="dropdown-item">
 					            <div class="row">
-												<a href="{% url 'index' %}"> <img class="langflag" src=" {% static 'images/lang-english.png' %} " alt=""></a>
-												<a href="{% url 'frindex' %}"><img class="langflag" src=" {% static 'images/lang-french.png' %} "  alt=""></a>
+												<a href="{% url 'inicio' %}"> <img class="langflag" src=" {% static 'images/lang-spanish.png' %} " alt=""></a>
+												<a href="{% url 'index' %}"><img class="langflag" src=" {% static 'images/lang-english.png' %} "  alt=""></a>
 												<!--
 												<a href=""> <img class="langflag" src=" {% static 'images/lang-german.png' %} " href="google.com" alt=""></a>
 												<a href=""> <img class="langflag" src=" {% static 'images/lang-italian.png' %} " href="google.com" alt=""></a>
@@ -135,18 +135,18 @@
 		<div class="menu_content">
 	<nav class="menu_nav text-right">
 		<ul>
-			<li><a href="{% url 'inicio' %}">Inicio</a></li>
-			<li><a href=" {% url 'rooms' %} ">Habitaciones</a></li>
-			<li><a href="{% url 'servicios' %}">Servicios</a></li>
-			<li><a href=" {% url 'ofertas' %} ">Ofertas</a></li>
-			<li><a href="https://reservations.travelclick.com/114062?HotelID=114062&LanguageID=2#/guestsandrooms">Reserva online</a></li>
+			<li><a href="{% url 'inicio' %}">Index</a></li>
+			<li><a href=" {% url 'rooms' %} ">Chambres</a></li>
+			<li><a href="{% url 'servicios' %}">Découvrez</a></li>
+			<li><a href=" {% url 'ofertas' %} ">Offres</a></li>
+			<li><a href="https://reservations.travelclick.com/114062?HotelID=114062&LanguageID=1#/guestsandrooms">Réserve online</a></li>
 		</ul>
 	</nav>
 </div>
 
 		<div class="row" style="padding-right: 40px; margin-top:15px;">
-			<a href=""> <img class="langflag" src=" {% static 'images/lang-english.png' %} " alt=""></a>
-			<a href=""><img class="langflag" src=" {% static 'images/lang-french.png' %} "  alt=""></a>
+			<a href="{% url 'inicio' %}"> <img class="langflag" src=" {% static 'images/lang-spanish.png' %} " alt=""></a>
+			<a href="{% url 'index' %}"><img class="langflag" src=" {% static 'images/lang-enlgish.png' %} "  alt=""></a>
 		</div>
 
 		<div class="menu_extra">
@@ -189,7 +189,7 @@
 
 				<!-- Reservations -->
 				<div class="col-lg-4" style="margin-left:105px">
-					<div class="footer_title">Contacto</div>
+					<div class="footer_title">Contact</div>
 					<div class="footer_list">
 						<ul>
 							<li>Tel: +34 941250244</li>
@@ -199,7 +199,7 @@
 				</div>
 
 				<div class="col-lg-4">
-					<div class="footer_title">Dirección</div>
+					<div class="footer_title">Adresse</div>
 					<div class="footer_list">
 						<ul>
 							<li>C/ Menéndez Pelayo, 7</li>

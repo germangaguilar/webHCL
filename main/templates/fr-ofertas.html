@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "fr-base.html" %}
 {% load static %}
 
 {% block extra_head %}
@@ -10,10 +10,10 @@
 {% endblock %}
 
 {% block extra_header %}
-		<li><a href="{% url 'inicio' %}">Inicio</a></li>
-		<li><a href=" {% url 'rooms' %} ">Habitaciones</a></li>
-		<li><a href="{% url 'servicios' %}">Servicios</a></li>
-		<li><a href=" {% url 'inicio' %}#ubicacion ">Ubicación</a></li>
+		<li><a href="{% url 'frindex' %}">Index</a></li>
+		<li><a href=" {% url 'frrooms' %} ">Chambres</a></li>
+		<li><a href="{% url 'frdiscover' %}">Découvrez</a></li>
+		<li><a href="{% url 'frindex' %}#ubicacion">Localisation</a></li>
 {% endblock %}
 
 {% block body_block %}
@@ -67,11 +67,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
-                        <h2>Nuestras ofertas</h2>
+                        <h2>Nos offres</h2>
                         <div class="bt-option">
-                            <a href="#promocionweb">Promoción web</a>
+                            <a href="#promocionweb">Promotion web </a>
                             <a href="">/</a>
-                            <a href="#variasnoches">Varias noches</a>
+                            <a href="#variasnoches">Réduction pour plusieurs nuits</a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
 				<div class="row">
 
 					<div class="col-xl-6 order-xl-1 order-1">
-						<div class="about_title"><h1>Promoción web</h1></div>
+						<div class="about_title"><h1>Promotion web</h1></div>
 
 
 
@@ -105,8 +105,8 @@
 						</div>-->
 						<div class="about_content">
 							<div class="about_text">
-								<p>Promoción aplicable a todas las reservas realizadas a través de nuestra web.</p>
-								<p>También puede aprovechar esta promoción llamándonos por teléfono al 941 250244 o escribiéndonos un correo a hotelciudad@pretur.com</p>
+								<p>Promotion applicable à toutes les réservations effectuées sur notre site web.</p>
+								<p>Vous pouvez également bénéficier de cette promotion en nous appelant au +34 941 250244 ou en envoyant un courriel à hotelciudad@pretur.com.</p>
 							</div>
 							<!--<div class="about_sig"><img src=" {% static 'images/sig.png' %} " alt=""></div>-->
 						</div>
@@ -165,7 +165,7 @@
 				<div class="row">
 
 					<div class="col-xl-6 order-xl-1 order-1">
-						<div class="about_title"><h1>Estancias de varias noches</h1></div>
+						<div class="about_title"><h1>Réduction pour plusieurs nuits</h1></div>
 
 
 
@@ -194,9 +194,9 @@
 					<div class="col-xl-6 order-xl-2 order-2">
 						<div class="about_content" style="margin-top: 0px; margin-left:10px">
 							<div class="about_text" style="margin-top: 25px; margin-left:10px">
-								<h4>Si su reserva es de más de una noche, le aplicaremos un descuento adicional del 10% sobre el precio de su reserva.</h4>
+								<h4>Si vous réservez pour plus d'une nuit, nous appliquerons une réduction supplémentaire de 10% sur le prix de votre réservation.</h4>
 
-								<h5 style="margin-top:15px;">Descuento aplicable automáticamente al seleccionar varias noches consecutivas.</h5>
+								<h5 style="margin-top:15px;">Cette réduction s'applique automatiquement lorsque vous sélectionnez plusieurs nuits consécutives.</h5>
 							</div>
 						</div>
 					</div>
@@ -236,6 +236,43 @@
     <script src=" {% static 'js/custom.js' %} "></script>
     <script src=" {% static 'js/about.js' %} "></script>
 
+		<script>
+		$(document).ready(function(){
+		  $('[data-toggle="popover"]').popover({
+		    container: '.well'
+		  });
+		});
+		</script>
+
+
+
+		<script>
+			var elem1 = '<div class="textbox"><a href=""><p1>Si vous trouvez un prix inférieur à celui proposé sur notre site web pour les mêmes dates, veuillez nous contacter.</p1></a></div>';
+		$(document).ready(function(){
+		  $('.popover1').popover({content: elem1, trigger:"focus", html: true});
+		});
+		</script>
+
+		<script>
+			var elem2 = '<div class="textbox"><a href=""><p1>La réservation en ligne comprend notre petit-déjeuner, sans frais supplémentaires.</p1></a></div>';
+		$(document).ready(function(){
+		  $('.popover2').popover({content: elem2, trigger:"focus", html: true});
+		});
+		</script>
+
+		<script>
+			var elem3 = '<div class="textbox"  ><a href=""><p1>Changement de plan? Dans la limite d`un préavis de 48 heures, vous pouvez annuler votre réservation sans aucune obligation.</p1></a></div>';
+		$(document).ready(function(){
+		  $('.popover3').popover({content: elem3, trigger:"focus", html: true});
+		});
+		</script>
+
+		<script>
+			var elem4 = '<div class="textbox"  ><a href=""><p1>Pour des raisons de commodité et de flexibilité, nous ne vous demanderons pas de paiement à l`avance.</p1></a></div>';
+		$(document).ready(function(){
+		  $('.popover4').popover({content: elem4, trigger:"focus", html: true});
+		});
+		</script>
 
 
 {% endblock %}

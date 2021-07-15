@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "fr-base.html" %}
 {% load static %}
 
 {% block extra_head %}
@@ -11,10 +11,10 @@
 {% endblock %}
 
 {% block extra_header %}
-    <li><a href="{% url 'inicio' %}">Inicio</a></li>
-    <li  class="active"><a href=" {% url 'rooms' %} ">Habitaciones</a></li>
-    <li><a href="{% url 'servicios' %}">Servicios</a></li>
-    <li><a href=" {% url 'inicio' %}#ubicacion ">Ubicación</a></li>
+		<li ><a href="{% url 'frindex' %}">Index</a></li>
+		<li class="active"><a href=" {% url 'frrooms' %} ">Chambres</a></li>
+		<li><a href="{% url 'frdiscover' %}">Découvrez</a></li>
+		<li><a href="{% url 'frindex' %}#ubicacion">Localisation</a></li>
 {% endblock %}
 
 {% block body_block %}
@@ -68,11 +68,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
-                        <h2>Nuestras habitaciones</h2>
+                        <h2>Nos chambres</h2>
                         <div class="bt-option">
                             <a href="#amenities">Amenities</a>
                             <a href="">/</a>
-                            <a href="#vistas">Vistas</a>
+                            <a href="#vistas">Chambres extérieures</a>
                         </div>
                     </div>
                 </div>
@@ -89,22 +89,22 @@
                     <div class="room-item">
                         <img src="{% static 'images/habitacion2mod.jpg' %}" alt="">
                         <div class="ri-text">
-                            <h4>Habitación Doble </h4>
+                            <h4>Chambre double </h4>
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td class="r-o">Tamaño:</td>
+                                        <td class="r-o">Dimension:</td>
                                         <td>25 m<sup>2</sup></td>
                                     </tr>
                                     <tr>
-                                        <td class="r-o">Capacidad:</td>
-                                        <td>Dos personas</td>
+                                        <td class="r-o">Capacité:</td>
+                                        <td>Deux personnes</td>
 
                                     </tr>
 
                                     <tr>
-                                        <td class="r-o" >Camas:</td>
-                                        <td>Dos camas individuales</td>
+                                        <td class="r-o" >Lits:</td>
+                                        <td>Lits séparés</td>
                                     </tr>
                                     <tr>
                                         <td class="r-o" ></td>
@@ -121,21 +121,21 @@
                     <div class="room-item">
                         <img src="{% static 'images/habitacion1mod.jpg' %}" alt="">
                         <div class="ri-text">
-                            <h4>Habitación individual</h4>
+                            <h4>Chambre individuelle</h4>
 
                             <table>
                                 <tbody>
                                     <tr>
-                                      <td class="r-o">Tamaño:</td>
+                                      <td class="r-o">Dimension:</td>
                                       <td>21 m<sup>2</sup></td>
                                     </tr>
                                     <tr>
-                                      <td class="r-o">Capacidad:</td>
-                                      <td>Una persona</td>
+                                      <td class="r-o">Capacité:</td>
+                                      <td>Une personne</td>
                                     </tr>
                                     <tr>
-                                      <td class="r-o" >Camas:</td>
-                                      <td>Cama individual</td>
+                                      <td class="r-o" >Lits:</td>
+                                      <td>Lit individuel</td>
                                     </tr>
                                     <tr>
                                         <td class="r-o" ></td>
@@ -151,22 +151,22 @@
                     <div class="room-item">
                         <img src="{% static 'images/habitacion3mod.jpg' %}" alt="">
                         <div class="ri-text">
-                            <h4>Habitación matrimonial</h4>
+                            <h4>Chambre matrimoniale</h4>
                             <table>
                               <tbody>
                                   <tr>
-                                      <td class="r-o">Tamaño:</td>
+                                      <td class="r-o">Dimension:</td>
                                       <td>25 m<sup>2</sup></td>
                                   </tr>
                                   <tr>
-                                      <td class="r-o">Capacidad:</td>
-                                      <td>Dos personas</td>
+                                      <td class="r-o">Capacité:</td>
+                                      <td>Deux personnes</td>
 
                                   </tr>
 
                                   <tr>
                                       <td class="r-o" >Camas:</td>
-                                      <td>Cama doble</td>
+                                      <td>Lit double</td>
                                   </tr>
 
 
@@ -198,12 +198,12 @@
                         <div class="section-title">
                             <div class="section-title">
 
-                                <h2>Un lugar para descansar</h2>
+                                <h2>Un lieu de repos</h2>
                             </div>
-                            <span>Amplitud</span>
-                            <p>Nuestras habitaciones se caracterizan por su amplio tamaño, óptimo para su comodidad. Disponen de armarios, espejos de cuerpo entero, escritorios y baños con bañera.</p>
-                            <span>Sistema de calidad</span>
-                            <p>Contamos con un estricto sistema de calidad para garantizar su descanso en las mejores condiciones.</p>
+                            <span>Amplitude</span>
+                            <p>Nos chambres se caractérisent par leur grande taille, optimale pour votre confort. Elles disposent d'armoires, de miroirs en pied, de bureaux et de salles de bains avec baignoire.</p>
+                            <span>Système de qualité</span>
+                            <p>Nous disposons d'un système de qualité strict pour garantir votre repos dans les meilleures conditions.</p>
                             <span>Amenities</span>
                             <div class="ri-features">
                                 <div class="ri-info">
@@ -216,7 +216,7 @@
                                 </div>
                                 <div class="ri-info">
                                     <i class="flaticon-020-telephone"></i>
-                                    <p>Teléfono</p>
+                                    <p>Phone</p>
                                 </div>
                                 <div class="ri-info">
                                     <i class="flaticon-003-air-conditioner"></i>
@@ -228,23 +228,23 @@
                                 </div>
                                 <div class="ri-info">
                                     <i class="flaticon-030-bathtub"></i>
-                                    <p>Bañera</p>
+                                    <p>Bathtub</p>
                                 </div>
                                 <div class="ri-info">
                                     <i class="flaticon-023-hair-dryer"></i>
-                                    <p>Secador</p>
+                                    <p>Dryer</p>
                                 </div>
                                 <div class="ri-info">
                                     <i class="flaticon-011-no-smoking"></i>
-                                    <p>Sin humo</p>
+                                    <p>Non-smoke</p>
                                 </div>
                                 <div class="ri-info">
                                     <i class="flaticon-049-power-socket"></i>
-                                    <p>Enchufes</p>
+                                    <p>Sockets</p>
                                 </div>
                                 <div class="ri-info">
                                     <i class="flaticon-024-towel"></i>
-                                    <p>Toallas</p>
+                                    <p>Towels</p>
                                 </div>
 
 
@@ -267,12 +267,9 @@
                     <div class="ri-text left-side">
                         <div class="section-title">
                             <div class="section-title">
-                                <h2>Disfrute de agradables vistas</h2>
+                                <h2>Profitez de vues agréables</h2>
                             </div>
-                            <p>Frente al hotel podrán encontrar el Parque Gallarza, un tranquilo espacio abierto cuyas vistas
-                              agradecen muchos de nuestros clientes. Si quiere asegurarse una habitación exterior, por favor
-                              háganoslo saber escribiéndonos un breve correo, y pronto le comunicaremos si se la podemos ofrecer
-                              sin ningún tipo de coste adicional.
+                            <p>En face de l'hôtel se trouve le parc Gallarza, un espace ouvert paisible dont les vues sont appréciées par nombre de nos clients. Si vous souhaitez réserver une chambre extérieure, veuillez nous le faire savoir en nous envoyant un bref e-mail, et nous vous ferons savoir rapidement si nous pouvons vous la proposer sans frais supplémentaires.
                            </p>
 
                         </div>

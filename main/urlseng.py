@@ -5,14 +5,8 @@ from .  import views
 
 urlpatterns = [
      path('index/',views.index,name='index'),
+     path('discover/',views.discover,name='discover'),
+     path('rooms/',views.engrooms,name='engrooms'),
+     path('offers/',views.offers,name='offers'),
      path('',views.index,name='index'),
-     path('logout/',views.logout_view,name='logout'),
-     path("base",views.base,name='base'),
-     #path('esp',include('main.urls')),
-     path("quienes_somos",views.about,name='about'),
-     path("contacto",views.contact,name='contact'),
-     path("ofertas",views.ofertas,name='ofertas'),
-     path("servicios",views.servicios,name='servicios'),
-     path("registro",views.register_view,name='registro'),
-     path("habitaciones",views.rooms,name='rooms'),
 ]

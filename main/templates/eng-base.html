@@ -61,9 +61,9 @@
 													</div>
 
 													<div class="row">
-														<a href="mailto: ciudad@pretur.com"alt=""><p style="	font-size: 16px;
+														<a href="mailto: hotelciudad@pretur.com"alt=""><p style="	font-size: 16px;
 															font-weight: 500;
-															color: #ffffff;">ciudad@pretur.com</p></a>
+															color: #ffffff;">hotelciudad@pretur.com</p></a>
 
 													</div>
 											</div>
@@ -98,8 +98,8 @@
 				</div>
 			-->
 
-			<div class="altbookbutton" style="width: 120px;"><a href="{% url 'ofertas' %}">Offers</a></div>
-			<div class="book_button" style="margin-left: 10px;"><a href="https://reservations.travelclick.com/114062?HotelID=114062&LanguageID=2#/guestsandrooms">Online booking</a></div>
+			<div class="altbookbutton" style="width: 120px;"><a href="{% url 'offers' %}">Offers</a></div>
+			<div class="book_button" style="margin-left: 10px;"><a href="https://reservations.travelclick.com/114062?HotelID=114062&LanguageID=1#/guestsandrooms">Online booking</a></div>
 
 
 
@@ -110,7 +110,7 @@
 					<div class="dropdown-item">
 					            <div class="row">
 												<a href="{% url 'inicio' %}"> <img class="langflag" src=" {% static 'images/lang-spanish.png' %} " alt=""></a>
-												<a href=""><img class="langflag" src=" {% static 'images/lang-french.png' %} "  alt=""></a>
+												<a href="{% url 'frindex' %}"><img class="langflag" src=" {% static 'images/lang-french.png' %} "  alt=""></a>
 												<!--
 												<a href=""> <img class="langflag" src=" {% static 'images/lang-german.png' %} " href="google.com" alt=""></a>
 												<a href=""> <img class="langflag" src=" {% static 'images/lang-italian.png' %} " href="google.com" alt=""></a>
@@ -139,14 +139,14 @@
 			<li><a href=" {% url 'rooms' %} ">Rooms</a></li>
 			<li><a href="{% url 'servicios' %}">Discover</a></li>
 			<li><a href=" {% url 'ofertas' %} ">Offers</a></li>
-			<li><a href="https://reservations.travelclick.com/114062?HotelID=114062&LanguageID=2#/guestsandrooms">Online booking</a></li>
+			<li><a href="https://reservations.travelclick.com/114062?HotelID=114062&LanguageID=1#/guestsandrooms">Online booking</a></li>
 		</ul>
 	</nav>
 </div>
 
 		<div class="row" style="padding-right: 40px; margin-top:15px;">
-			<a href=""> <img class="langflag" src=" {% static 'images/lang-english.png' %} " alt=""></a>
-			<a href=""><img class="langflag" src=" {% static 'images/lang-french.png' %} "  alt=""></a>
+			<a href="{% url 'inicio' %}"> <img class="langflag" src=" {% static 'images/lang-spanish.png' %} " alt=""></a>
+			<a href="{% url 'frindex' %}"><img class="langflag" src=" {% static 'images/lang-french.png' %} "  alt=""></a>
 		</div>
 
 		<div class="menu_extra">

@@ -25,6 +25,7 @@ from main.views import register_view
 urlpatterns = [
      path('',include('main.urls')),
      path('en/',include('main.urlseng')),
+     path('fr/',include('main.urlsfrench')),
      path('admin/', admin.site.urls),
      path('register/', register_view, name='register'),
 ]

@@ -1,4 +1,4 @@
-{% extends "eng-base.html" %}
+{% extends "fr-base.html" %}
 {% load static %}
 
 {% block extra_head %}
@@ -8,10 +8,10 @@
 {% endblock %}
 
 {% block extra_header %}
-		<li class="active"><a href="{% url 'index' %}">Index</a></li>
-		<li><a href=" {% url 'engrooms' %} ">Rooms</a></li>
-		<li><a href="{% url 'discover' %}">Discover</a></li>
-		<li><a href="#ubicacion">Location</a></li>
+		<li  class="active"><a href="{% url 'frindex' %}">Index</a></li>
+		<li><a href=" {% url 'frrooms' %} ">Chambres</a></li>
+		<li><a href="{% url 'frdiscover' %}">Découvrez</a></li>
+		<li><a href="#ubicacion">Localisation</a></li>
 {% endblock %}
 
 {% block body_block %}
@@ -28,9 +28,9 @@
 				<div class="row">
 					<div class="col">
 						<div class="home_content text-center">
-							<div class="home_title">Ciudad de Logroño Hotel ⭑⭑⭑</div>
+							<div class="home_title">Hôtel Ciudad de Logroño ⭑⭑⭑</div>
 							<a href="#promocion">
-							<div class="home_title2">Discover the advantages of booking on our website</div>
+							<div class="home_title2">Découvrez les avantages de la réservation sur notre site web</div>
 							</a>
 
 							<div class="booking_form_container">
@@ -145,7 +145,7 @@
 			<div class="row">
 
 				<div class="col-xl-6 order-xl-1 order-1">
-					<div class="about_title"><h1>Benefits of booking with us</h1></div>
+					<div class="about_title"><h1>Avantages de réserver avec nous</h1></div>
 
 
 
@@ -160,7 +160,7 @@
 					</div>-->
 					<div class="about_content">
 						<div class="about_text">
-							<p>Promotion applicable to direct bookings: you can write us an email, book by phone or book on our website.</p>
+							<p>Promotion applicable aux réservations directes : vous pouvez nous écrire un e-mail, réserver par téléphone ou réserver sur notre site web.</p>
 						</div>
 						<!--<div class="about_sig"><img src=" {% static 'images/sig.png' %} " alt=""></div>-->
 					</div>
@@ -261,7 +261,7 @@
 				<div class="col">
 					<div class="blog_title" style="text-align:center; font-size: 30px;
 					font-weight: 500;
-					color: #abbaaa"><a   href="">Comments from our guests</a></div>
+					color: #abbaaa"><a   href="">Commentaires de nos clients</a></div>
 					<p></p>
 					<!-- Begin widget code -->
 					<div data-rw-slider="23292"></div>
@@ -281,9 +281,9 @@
 				<!-- About Content -->
 				<div class="col-lg-6">
 					<div class="about_content">
-						<div class="about_title"><h2>At the heart of Logroño</h2></div>
+						<div class="about_title"><h2>Au cœur de Logroño</h2></div>
 						<div class="about_text">
-							<p>The hotel's location offers all kinds of possibilities, as it is within walking distance of the train station, the bus station, the old town, the best shopping areas and, of course, the famous Laurel Street, located just 700 metres away.</p>
+							<p>L'emplacement de l'hôtel offre toutes sortes de possibilités, puisqu'il se trouve à quelques pas de la gare ferroviaire, de la gare routière, de la vieille ville, des meilleurs quartiers commerçants et, bien sûr, de la célèbre rue Laurel, située à seulement 700 mètres.</p>
 						<button type="button" class="btn btn-primary">Google Maps</button>
 
 
@@ -343,9 +343,9 @@
 
 				<div class="col-xl-6 order-xl-2 order-1">
 					<div class="split_section_right_content">
-						<div class="split_section_title"><h1 style="font-size: 52px;">Perfect for business trips</h1></div>
+						<div class="split_section_title"><h1 style="font-size: 52px;">Parfait pour les voyages d'affaires</h1></div>
 						<div class="split_section_text">
-							<p>Our spacious rooms and the quiet park in front of the hotel will guarantee you a good night's sleep. If you have come to work or to organise a meeting, you can make use of our lounge, where you can connect your laptop and use our WiFi. Looking for a more relaxed atmosphere? Try our bright bar area.</p>
+							<p>Nos chambres spacieuses et le parc tranquille situé devant l'hôtel vous garantiront une bonne nuit de sommeil. Si vous êtes venu pour travailler ou pour organiser une réunion, vous pouvez utiliser notre salon, où vous pouvez connecter votre ordinateur portable et utiliser notre WiFi. Vous recherchez une atmosphère plus détendue ? Essayez notre bar lumineux.</p>
 						</div>
 
 						<!-- Loaders -->
@@ -402,13 +402,13 @@
 			<div class="row">
 				<div class="col-xl-6">
 					<div class="split_section_left_content">
-						<div class="split_section_title"><h1 style="font-size: 60px;">Logroño, capital of La Rioja</h1></div>
+						<div class="split_section_title"><h1 style="font-size: 60px;">Logroño, capitale de La Rioja</h1></div>
 						<div class="split_section_text">
-							<p>Make comfortable day trips from our hotel to any point in our region and enjoy the gastronomic and scenic variety of La Rioja, as well as its multiple wine tourism offer.</p>
+							<p>Faites des excursions confortables d'une journée depuis notre hôtel vers n'importe quel point de notre région et profitez de la variété gastronomique et paysagère de La Rioja, ainsi que de son offre œnotouristique multiple.</p>
 						</div>
 
 						<div class="container">
-							<a href="https://lariojaturismo.com/en" target="_blank"><button type="button" class="btn btn-primary" >La Rioja Turismo</button></a>
+							<a href="https://lariojaturismo.com/fr" target="_blank"><button type="button" class="btn btn-primary" >La Rioja Turismo</button></a>
 						</div>
 
 					</div>
@@ -463,49 +463,49 @@ $(document).ready(function(){
 
 
 <script>
-	var elem1 = '<div class="textbox"><a href=""><p1>Si encuentra un precio inferior al que le ofrece nuestra web para las mismas fechas, contacte con nosotros.</p1></a></div>';
+	var elem1 = '<div class="textbox"><a href=""><p1>Si vous trouvez un prix inférieur à celui proposé sur notre site web pour les mêmes dates, veuillez nous contacter.</p1></a></div>';
 $(document).ready(function(){
   $('.popover1').popover({content: elem1, trigger:"focus", html: true});
 });
 </script>
 
 <script>
-	var elem2 = '<div class="textbox"><a href=""><p1>La reserva web incluye nuestro desayuno, sin ningún coste adicional.</p1></a></div>';
+	var elem2 = '<div class="textbox"><a href=""><p1>La réservation en ligne comprend notre petit-déjeuner, sans frais supplémentaires.</p1></a></div>';
 $(document).ready(function(){
   $('.popover2').popover({content: elem2, trigger:"focus", html: true});
 });
 </script>
 
 <script>
-	var elem3 = '<div class="textbox"  ><a href=""><p1>¿Cambio de planes? Con un límite de 48h de antelación, podrá cancelar su reserva sin ningún tipo de compromiso.</p1></a></div>';
+	var elem3 = '<div class="textbox"  ><a href=""><p1>Changement de plan? Dans la limite d`un préavis de 48 heures, vous pouvez annuler votre réservation sans aucune obligation.</p1></a></div>';
 $(document).ready(function(){
   $('.popover3').popover({content: elem3, trigger:"focus", html: true});
 });
 </script>
 
 <script>
-	var elem4 = '<div class="textbox"  ><a href=""><p1>Para mayor comodidad y flexibilidad, no le pediremos ningún pago por adelantado.</p1></a></div>';
+	var elem4 = '<div class="textbox"  ><a href=""><p1>Pour des raisons de commodité et de flexibilité, nous ne vous demanderons pas de paiement à l`avance.</p1></a></div>';
 $(document).ready(function(){
   $('.popover4').popover({content: elem4, trigger:"focus", html: true});
 });
 </script>
 
 <script>
-	var elem5 = '<div class="textbox"  ><a href=""><p1>Valoración de 4,6/5 puntos en el apartado <i>Servicio</i> de las reseñas de Google a día 10/07/2021</p1></a></div>';
+	var elem5 = '<div class="textbox"  ><a href=""><p1>Note de 4,6/5 points dans la section <i>Service</i> des avis Google au 10 juillet 2021.</p1></a></div>';
 $(document).ready(function(){
   $('.popover5').popover({content: elem5, trigger:"focus", html: true});
 });
 </script>
 
 <script>
-	var elem6 = '<div class="textbox"  ><a href=""><p1>Nota media de 4,5/5 puntos en las valoraciones de viajeros etiquetados como <i>Viajes de negocios</i> en Expedia a día 10/07/2021</p1></a></div>';
+	var elem6 = '<div class="textbox"  ><a href=""><p1>Note moyenne de 4,5/5 points pour les évaluations des voyageurs étiquetés comme <i>Voyage d` affaires</i> sur Expedia à partir du 10 juillet 2021.</p1></a></div>';
 $(document).ready(function(){
   $('.popover6').popover({content: elem6, trigger:"focus", html: true});
 });
 </script>
 
 <script>
-	var elem7 = '<div class="textbox"  ><a href=""><p1>Valoración de 97/100 puntos en el apartado <i>Ubicación</i> de TripAdvisor a día 10/07/2021</p1></a></div>';
+	var elem7 = '<div class="textbox"  ><a href=""><p1>Note de 97/100 points sur la page <i>Location</i> de TripAdvisor à partir du 10 juillet 2021.</p1></a></div>';
 $(document).ready(function(){
   $('.popover7').popover({content: elem7, trigger:"focus", html: true});
 });

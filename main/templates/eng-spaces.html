@@ -1,0 +1,197 @@
+{% extends "eng-base.html" %}
+{% load static %}
+
+{% block extra_head %}
+
+<link rel="stylesheet" href="{% static 'styles/europestyle.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'styles/sona-style.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'styles/flaticon.css' %}" type="text/css">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/theriver_main_styles.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/about.css' %} ">
+<link rel="stylesheet" type="text/css" href=" {% static 'styles/responsive.css' %} ">
+{% endblock %}
+
+{% block extra_header %}
+  <li><a href="{% url 'index' %}">Index</a></li>
+  <li><a href=" {% url 'engrooms' %} ">Rooms</a></li>
+  <li  class="active"><a href="{% url 'discover' %}">Discover</a></li>
+  <li><a href="{% url 'index' %}#ubicacion">Location</a></li>
+{% endblock %}
+
+{% block body_block %}
+
+  <div class="header_content" style="background-image:url( {% static 'images/headerback1.jpg' %} )"></div>
+
+
+{% load widget_tweaks %}
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sona Template">
+    <meta name="keywords" content="Sona, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sona | Template</title>
+
+    <!-- Google Font
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>-->
+    <!-- Page Preloder
+    <div id="preloder">
+        <div class="loadersona"></div>
+    </div>-->
+
+
+    <!-- Breadcrumb Section Begin -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <h2>Spaces and facilities</h2>
+                        <div class="bt-option">
+                            <a href="#bar">Bar area</a>
+                            <a href="">/</a>
+                            <a href="#workspace">Lounge and workspace</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+
+
+
+    <!-- Room Section Begin -->
+    <section class="room-section">
+        <div class="container-fluid">
+            <div class="row" id="workspace">
+                <div class="col-lg-6">
+                    <div class="ri-slider-item">
+                        <div class="ri-sliders owl-carousel">
+                          <div class="single-img set-bg" data-setbg=" {% static 'images/hall3.jpg' %} "></div>
+                          <div class="single-img set-bg" data-setbg=" {% static 'images/workspace.jpg' %} "></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ri-text">
+                        <div class="section-title">
+                            <div class="section-title">
+
+                                <h2>Your workspace</h2>
+                            </div>
+                            <p>Our lounge is designed so that you can stay and work in total comfort. You can make use of our power sockets and our WiFi network, or organise your business meetings.</p>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="bar">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="ri-slider-item">
+                        <div class="ri-sliders owl-carousel">
+                          <div class="single-img set-bg" data-setbg=" {% static 'images/zonabar.jpg' %} "></div>
+                          <div class="single-img set-bg" data-setbg=" {% static 'images/entrada2.jpg' %} "></div>
+                          <div class="single-img set-bg" data-setbg=" {% static 'images/entrada3.jpg' %} "></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="ri-text left-side">
+                        <div class="section-title">
+                            <div class="section-title">
+                                <h2>Bar area</h2>
+                            </div>
+                            <p>The hotel's bright lobby includes a bar area with comfortable lounge chairs, perfect for a relaxing moment.
+                           </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="row" id="parking">
+                <div class="col-lg-6">
+                    <div class="ri-slider-item">
+                        <div class="ri-sliders owl-carousel">
+                            <div class="single-img set-bg" data-setbg=" {% static 'images/parking1.jpg' %} "></div>
+                            <div class="single-img set-bg" data-setbg=" {% static 'images/parking2.jpg' %} "></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ri-text">
+                        <div class="section-title">
+                            <div class="section-title">
+
+                                <h2>Parking</h2>
+                            </div>
+                            <p>¡No tenemos el parking más cómodo de la ciudad! De hecho, es más estrecho de lo que
+                              nos gustaría, pero está a disposición de nuestros clientes por un precio de 13€ por noche.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </section>
+    <!-- Rooms Section End -->
+
+    <!-- Search model end -->
+
+    <!-- Js Plugins-->
+    <script src=" {% static 'js/jquery-3.3.1.min.js' %} "></script>
+    <script src=" {% static 'js/bootstrap.min.js' %} "></script>
+    <script src=" {% static 'jseurope/jquery.magnific-popup.min.js' %} "></script>
+    <script src=" {% static 'jseurope/jquery.nice-select.min.js' %} "></script>
+    <script src=" {% static 'jseurope/jquery-ui.min.js' %} "></script>
+    <script src=" {% static 'jseurope/jquery.slicknav.js' %} "></script>
+    <script src=" {% static 'jseurope/owl.carousel.min.js' %} "></script>
+    <script src=" {% static 'jseurope/main.js' %} "></script>
+
+    <script src=" {% static 'js/jquery-3.3.1.min.js' %} "></script>
+    <script src=" {% static 'styles/bootstrap-4.1.2/popper.js' %} "></script>
+    <script src=" {% static 'styles/bootstrap-4.1.2/bootstrap.min.js' %} "></script>
+    <script src=" {% static 'plugins/greensock/TweenMax.min.js' %} "></script>
+    <script src=" {% static 'plugins/greensock/TimelineMax.min.js' %} "></script>
+    <script src=" {% static 'plugins/scrollmagic/ScrollMagic.min.js' %} "></script>
+    <script src=" {% static 'plugins/greensock/animation.gsap.min.js' %} "></script>
+    <script src=" {% static 'plugins/greensock/ScrollToPlugin.min.js' %} "></script>
+    <script src=" {% static 'plugins/OwlCarousel2-2.3.4/owl.carousel.js' %} "></script>
+    <script src=" {% static 'plugins/easing/easing.js' %} "></script>
+    <script src=" {% static 'plugins/progressbar/progressbar.min.js' %} "></script>
+    <script src=" {% static 'plugins/parallax-js-master/parallax.min.js' %} "></script>
+    <script src=" {% static 'plugins/jquery-datepicker/jquery-ui.js' %} "></script>
+    <script src=" {% static 'plugins/colorbox/jquery.colorbox-min.js' %} "></script>
+    <script src=" {% static 'js/custom.js' %} "></script>
+    <script src=" {% static 'js/about.js' %} "></script>
+
+
+
+{% endblock %}

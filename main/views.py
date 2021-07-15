@@ -120,6 +120,32 @@ def index(request):
     ro=models.rooms.objects.all()
     return render(request,"eng-inicio.html",{"ro":ro})
 
+def discover(request):
+    ro=models.rooms.objects.all()
+    return render(request,"eng-spaces.html",{"ro":ro})
+
+def engrooms(request):
+    ro=models.rooms.objects.all()
+    return render(request,"eng-rooms.html",{"ro":ro})
+
+def offers(request):
+    ro=models.rooms.objects.all()
+    return render(request,"eng-ofertas.html",{"ro":ro})
+
+def frindex(request):
+    return render(request,"fr-inicio.html")
+
+def frrooms(request):
+    return render(request,"fr-rooms.html")
+
+def frdiscover(request):
+    return render(request,"fr-spaces.html")
+
+def froffers(request):
+    return render(request,"fr-ofertas.html")
+
+
+
 def base(request):
     ro=models.rooms.objects.all()
     return render(request,"base.html",{"ro":ro})
