@@ -109,6 +109,20 @@
 		height: 600px;
 		margin-top: 43px;
 	}
+
+	.split_section_right_content
+	{
+		padding-top: 40px;
+		padding-left: 40px;
+		padding-bottom: 50px;
+		padding-right: 80px;
+	}
+
+	.footer_row > div[class^='col']
+	{
+		margin-left: 30%;
+	  margin-right: auto;
+	}
 }
 
 /************
@@ -303,17 +317,14 @@
 	}
 	.loader_container
 	{
-		height: 120px;
+		height: 130px;
 	}
 	.loader
 	{
-		width: 120px;
-		height: 120px;
+		width: 130px;
+		height: 130px;
 	}
-	.progressbar-text
-	{
-		font-size: 36px !important;
-	}
+
 	.loader_content
 	{
 		bottom: 3px;
@@ -505,7 +516,6 @@
 
 	.icongoogle
 	{
-	altbookbutton;
 		height: 18px;
 		margin-left: 15px;
 		margin-bottom: 2px;
@@ -551,11 +561,47 @@
 	}
 	.progressbar-text
 	{
-		font-size: 30px !important;
+		font-size: 20px !important;
 	}
 	.loader_title
 	{
 		font-size: 13px;
 	}
 
+	.footer_logo
+	{
+		display: inline-block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.footer_logo > div:first-of-type
+	{
+		width: 240px;
+		height: 54px;
+		border: solid 3px #393939;
+		font-size: 23.32px;
+		font-weight: 600;
+		color: #393939;
+		line-height: 68px;
+	}
+	.footer_logo > div:last-of-type
+	{
+		font-size: 16px;
+		font-weight: 600;
+		color: #393939;
+		line-height: 0.75;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.footer_logo a
+	{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
 }

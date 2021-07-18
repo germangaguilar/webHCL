@@ -318,6 +318,19 @@ section
 	padding-right: 0;
 }
 
+.container_footer
+{
+	margin-left: auto;
+  margin-right: auto;
+	max-width: 80%;
+}
+
+.footer_row > div[class^='col']
+{
+	margin-left: auto;
+  margin-right: auto;
+}
+
 /*********************************
 3. Header
 *********************************/
@@ -1100,7 +1113,7 @@ input[type=number]::-webkit-outer-spin-button
 }
 .footer_row
 {
-	margin-top: 74px;
+	margin-top: 64px;
 }
 .footer_title
 {
