@@ -1067,14 +1067,50 @@ input[type=number]::-webkit-outer-spin-button
 10. Footer
 *********************************/
 
-.footer
-{
-	background: #ffffff;
-	padding-top: 81px;
+footer{
+     background-color: #33383c;
+     padding:70px 0px;
 }
+
+footer ul li{
+    padding:5px 0px;
+}
+
+.adress span , .contact span , .social span{
+   color: #FFF;
+   font-weight: 800;
+   padding-bottom: 10px;
+   margin-bottom: 20px;
+   display: block;
+   text-transform: uppercase;
+   font-size: 20px;
+   letter-spacing: 3px;
+}
+
+.adress li p , .contact li a , .social li a{
+    color:#FFF;
+    letter-spacing: 2px;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.social li{
+    float:left;
+}
+
+.adress , .contact , .social {
+    list-style: none;
+}
+
+.fa{
+    color:#9c9c9c;
+    margin-right: 15px;
+    font-size:14px;
+}
+
 .footer_content
 {
-	padding-bottom: 52px;
+	padding-bottom: 10px;
 }
 .footer_logo
 {

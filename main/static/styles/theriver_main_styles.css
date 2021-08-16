@@ -123,7 +123,7 @@ p a:hover::after
 }
 p::selection
 {
-	
+
 }
 h1{font-size: 48px;}
 h2{font-size: 36px;}
@@ -140,14 +140,14 @@ h1, h2, h3, h4, h5, h6
 	color: #393939;
 	font-weight: 600;
 }
-h1::selection, 
-h2::selection, 
-h3::selection, 
-h4::selection, 
-h5::selection, 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
 h6::selection
 {
-	
+
 }
 img
 {
@@ -658,7 +658,7 @@ section
 }
 .booking_input_a
 {
-	
+
 }
 .booking_input_b
 {
@@ -668,9 +668,9 @@ section
 	-o-appearance: none;
 	appearance: none;
 }
-input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button
-{ 
+{
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
@@ -694,9 +694,9 @@ input[type=number]::-webkit-outer-spin-button
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: #FFFFFF !important;
-} 
+}
 .booking_input:-ms-input-placeholder
-{ 
+{
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: #FFFFFF !important;
@@ -774,7 +774,7 @@ input[type=number]::-webkit-outer-spin-button
 }
 .icon_box_title h2
 {
-	
+
 }
 .icon_box_text
 {
@@ -1168,9 +1168,9 @@ input[type=number]::-webkit-outer-spin-button
 	font-size: 15px !important;
 	font-weight: 500 !important;
 	color: #6d6d6d !important;
-} 
+}
 .newsletter_input:-ms-input-placeholder
-{ 
+{
 	font-size: 15px !important;
 	font-weight: 500 !important;
 	color: #6d6d6d !important;

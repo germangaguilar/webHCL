@@ -120,7 +120,7 @@
 
 	.footer_row > div[class^='col']
 	{
-		margin-left: 30%;
+		margin-left: 20%;
 	  margin-right: auto;
 	}
 }
@@ -231,7 +231,7 @@
 	}
 	.footer_content
 	{
-		padding-bottom: 22px;
+		padding-bottom: 10px;
 	}
 	.cert:not(:last-child)
 	{

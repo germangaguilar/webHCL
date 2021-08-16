@@ -99,7 +99,7 @@
 			-->
 
 			<div class="altbookbutton" style="width: 120px;"><a href="{% url 'froffers' %}">Offres</a></div>
-			<div class="book_button" style="margin-left: 10px;"><a href="https://reservations.travelclick.com/114062?HotelID=114062&LanguageID=1#/guestsandrooms">Online booking</a></div>
+			<div class="book_button" style="margin-left: 10px;"><a href="https://reservations.travelclick.com/114062?HotelID=114062&discount=directbooking&LanguageID=1#/guestsandrooms">Online booking</a></div>
 
 
 
@@ -139,7 +139,7 @@
 			<li><a href=" {% url 'rooms' %} ">Chambres</a></li>
 			<li><a href="{% url 'servicios' %}">Découvrez</a></li>
 			<li><a href=" {% url 'ofertas' %} ">Offres</a></li>
-			<li><a href="https://reservations.travelclick.com/114062?HotelID=114062&LanguageID=1#/guestsandrooms">Réserve online</a></li>
+			<li><a href="https://reservations.travelclick.com/114062?HotelID=114062&discount=directbooking&LanguageID=1#/guestsandrooms">Réserve online</a></li>
 		</ul>
 	</nav>
 </div>
@@ -167,7 +167,9 @@
 
 <!-- Footer -->
 
+
 <footer class="footer">
+
 	<div class="footer_content">
 		<div class="container_footer">
 			<div class="row">
@@ -183,49 +185,45 @@
 					</div>
 				</div>
 			</div>
-			<div class="row footer_row">
 
-
-
-				<!-- Reservations -->
-				<div class="col-lg-4">
-					<div class="footer_title">Contact</div>
-					<div class="footer_list">
-						<ul>
-							<li>Tel: +34 941250244</li>
-							<li>hotelciudad@pretur.com</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-lg-4">
-					<div class="footer_title">Adresse</div>
-					<div class="footer_list">
-						<ul>
-							<li>C/ Menéndez Pelayo, 7</li>
-							<li>26002 Logroño, La Rioja</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-lg-2">
-					<div class="certificates d-flex flex-row align-items-start justify-content-lg-between justify-content-start flex-lg-nowrap flex-wrap">
-						<a href="https://pretur.com/" target="_blank">
-						<div class="cert"><img src=" {% static 'images/logopretur.png' %} " alt=""></div></a>
-					</div>
-				</div>
-
-				<!-- Newsletter -->
-
-
-
-
-
-				<!-- Footer images -->
-
-			</div>
 		</div>
 	</div>
+
+
+	<div class="container" style="margin-bottom: 20px">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+
+								<div class="footer_title">Contact</div>
+								<div class="footer_list">
+									<ul>
+										<li>Tel: +34 941250244</li>
+										<li>hotelciudad@pretur.com</li>
+									</ul>
+								</div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<div class="footer_title">Adresse</div>
+							<div class="footer_list">
+								<ul>
+									<li>C/ Menéndez Pelayo, 7</li>
+									<li>26002 Logroño, La Rioja</li>
+								</ul>
+							</div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+							<div class="certificates d-flex flex-row align-items-start justify-content-lg-between justify-content-start flex-lg-nowrap flex-wrap">
+								<a href="https://pretur.com/" target="_blank">
+								<div class="cert"><img src=" {% static 'images/logopretur.png' %} " alt=""></div></a>
+							</div>
+            </div>
+       </div>
+    </div>
+
+
 	<div class="copyright">
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
@@ -234,6 +232,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </footer>
 
 <script src=" {% static 'js/about2.js' %} "></script>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </body>
 
 
